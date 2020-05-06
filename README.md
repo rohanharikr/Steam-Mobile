@@ -1,4 +1,4 @@
-![Store Preview](storepreview.gif)
+![Store Preview](store-preview.gif)
 
 ```
 clone the repo
