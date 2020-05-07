@@ -1,5 +1,5 @@
 <script>
- import PriceBox from './PriceBox.svelte'
+ import PriceBox from './PriceBox.svelte';
 
  export let image,
  			windows = true,

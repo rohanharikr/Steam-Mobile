@@ -16,17 +16,17 @@
 	<div id="spotlight">
 		{#if rectangleCard}
 			<RectangleCard image="https://cdn.arstechnica.net/wp-content/uploads/2019/10/outer-worlds-listing.png" originalPrice="69.99" reducedPrice="59.99" />
-			<RectangleCard image="https://i.ytimg.com/vi/eaW0tYpxyp0/maxresdefault.jpg" />
-			<RectangleCard image="https://steamcdn-a.akamaihd.net/steam/apps/374320/capsule_616x353.jpg" />
-			<RectangleCard image="https://steam.cryotank.net/wp-content/gallery/ori/Ori-01-HD.png" mac="true" />
-			<RectangleCard image="https://i.ytimg.com/vi/2enbYOMtR4I/maxresdefault.jpg" />
+			<RectangleCard image="https://i.ytimg.com/vi/eaW0tYpxyp0/maxresdefault.jpg" originalPrice="69.99" reducedPrice="59.99" />
+			<RectangleCard image="https://steamcdn-a.akamaihd.net/steam/apps/374320/capsule_616x353.jpg" originalPrice="69.99" reducedPrice="59.99" />
+			<RectangleCard image="https://steam.cryotank.net/wp-content/gallery/ori/Ori-01-HD.png" mac="true" originalPrice="69.99" reducedPrice="59.99" />
+			<RectangleCard image="https://i.ytimg.com/vi/2enbYOMtR4I/maxresdefault.jpg" originalPrice="69.99" reducedPrice="59.99" />
 		{/if}
 		{#if squareCard}
-			<SquareCard image="https://lh3.googleusercontent.com/caNRdVjHrAC8AXjQwNp4u0FzK2xwKTMC--MYdb8xXNeCinjwQOF8EqSOcYCC3RFBdgjd" mac="true" steam="true" />
-			<SquareCard image="https://www.androidpolice.com/wp-content/uploads/2018/10/81LJeCDylML.jpg" mac="true" steam="true" />
-			<SquareCard image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsrSn4-vAw6oUWmYryVBtEnTUUd6-5rCQdzS1p4Hik-dLxOnOz&usqp=CAU" mac="true" steam="true" />
-			<SquareCard image="https://i.ytimg.com/vi/gvECQlxrhbw/maxresdefault.jpg" mac="true" />
-			<SquareCard image="https://images-na.ssl-images-amazon.com/images/I/71p9r+IRobL.jpg" mac="true" />
+			<SquareCard image="https://lh3.googleusercontent.com/caNRdVjHrAC8AXjQwNp4u0FzK2xwKTMC--MYdb8xXNeCinjwQOF8EqSOcYCC3RFBdgjd" mac="true" steam="true" originalPrice="69.99" reducedPrice="59.99" />
+			<SquareCard image="https://www.androidpolice.com/wp-content/uploads/2018/10/81LJeCDylML.jpg" mac="true" steam="true" originalPrice="69.99" reducedPrice="59.99" />
+			<SquareCard image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsrSn4-vAw6oUWmYryVBtEnTUUd6-5rCQdzS1p4Hik-dLxOnOz&usqp=CAU" mac="true" steam="true" originalPrice="69.99" reducedPrice="59.99" />
+			<SquareCard image="https://i.ytimg.com/vi/gvECQlxrhbw/maxresdefault.jpg" mac="true" originalPrice="69.99" reducedPrice="59.99" />
+			<SquareCard image="https://images-na.ssl-images-amazon.com/images/I/71p9r+IRobL.jpg" mac="true" originalPrice="69.99" reducedPrice="59.99" />
 		{/if}
 		{#if stripCard}
 			<StripCard genre="Indie" image="https://venturebeat.com/wp-content/uploads/2012/03/journey-1.jpg?w=1200&strip=all" />
