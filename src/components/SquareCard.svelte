@@ -1,6 +1,4 @@
 <script>
- import PriceBox from './PriceBox.svelte'
- 
  export let image,
  			windows = true,
  			mac = false,
@@ -8,7 +6,7 @@
 </script>
 
 <div id="card">
-	<div id="image" style="background-image: url({image});"><PriceBox /></div>
+	<div id="image" style="background-image: url({image});"></div>
 	<div id="cardInfo">
 		<!-- <div id="owners">11 friends own this game</div> -->
 		<div>
@@ -29,6 +27,7 @@
 	#card {
 		display: flex;
 		flex-direction: column;
+		position: relative;
 	}
 
 	#image {
