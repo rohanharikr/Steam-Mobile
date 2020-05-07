@@ -15,7 +15,7 @@
 	<h3>{heading}</h3>
 	<div id="spotlight">
 		{#if rectangleCard}
-			<RectangleCard image="https://cdn.arstechnica.net/wp-content/uploads/2019/10/outer-worlds-listing.png" />
+			<RectangleCard image="https://cdn.arstechnica.net/wp-content/uploads/2019/10/outer-worlds-listing.png" originalPrice="69.99" reducedPrice="59.99" />
 			<RectangleCard image="https://i.ytimg.com/vi/eaW0tYpxyp0/maxresdefault.jpg" />
 			<RectangleCard image="https://steamcdn-a.akamaihd.net/steam/apps/374320/capsule_616x353.jpg" />
 			<RectangleCard image="https://steam.cryotank.net/wp-content/gallery/ori/Ori-01-HD.png" mac="true" />

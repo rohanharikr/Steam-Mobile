@@ -4,11 +4,13 @@
  export let image,
  			windows = true,
  			mac = false,
- 			steam = false;
+ 			steam = false,
+ 			originalPrice,
+ 			reducedPrice;
 </script>
 
 <div id="card">
-	<div id="image" style="background-image: url({image});"><PriceBox originalPrice="69.99" reducedPrice="59.99" /></div>
+	<div id="image" style="background-image: url({image});"><PriceBox {originalPrice} {reducedPrice} /></div>
 	<div id="cardInfo">
 		<div id="owners">11 friends own this game</div>
 		<div>
