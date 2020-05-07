@@ -9,7 +9,7 @@
 	<a href="profile">
 		<div class="tabItem {location == 2 ? 'selected' : ''}"><img src={location == 2 ? 'profilewhite.svg' : 'profile.svg'} />Profile</div>
 	</a>
-	<a href="guard">
+	<a href="index">
 		<div class="tabItem {location == 3 ? 'selected' : ''}"><img src={location == 3 ? 'guardwhite.svg' : 'guard.svg'} />Guard</div>
 	</a>
 	<a href="chat">

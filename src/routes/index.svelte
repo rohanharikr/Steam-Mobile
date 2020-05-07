@@ -1,43 +1,19 @@
 <script>
-	
+	import Navbar from '../components/Navbar.svelte';
+	import Tabbar from '../components/Tabbar.svelte';
+	import StoreSection from '../components/StoreSection.svelte';
 </script>
-<div id="container">
-	<div id="greeting">
-		<img src="steamlogo.svg" height="60px;" />
-		<div id="greeting--text">
-			<h2>Welcome to</h2>
-			<h1>Steam Mobile</h1>
-		</div>
-		<button onclick="location.href='signin';">Continue</button>
-	</div>
+
+<Navbar title="Steam Guard" />
+<Tabbar location="3" />
+<div id="guard">
+	72826
 </div>
 
 <style>
-	#greeting {
-		height: 400px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-
-	#greeting--text {
-		margin-top: -30px;
-	}
-
-	button {
-	    font-size: 16px;
-	    width: min-content;
-	    font-weight: 500;
-	}
-
-	h1 {
-		font-size: 36px;
-		font-weight: 400;
-	}
-
-	h2{
-		font-size: 26px;
-		font-weight: 300;
+	#guard{
+		padding: 90px 30px;
+		padding-right: 0;
+		padding-bottom: 60px;
 	}
 </style>
