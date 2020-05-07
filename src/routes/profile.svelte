@@ -4,6 +4,10 @@
 	import StoreSection from '../components/StoreSection.svelte';
 </script>
 
+<svelte:head>
+	<title>Profile :: Steam Mobile</title>
+</svelte:head>
+
 <Navbar title="Profile" />
 <Tabbar location="2" />
 <div id="profile">

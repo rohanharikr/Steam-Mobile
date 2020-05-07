@@ -4,6 +4,10 @@
 	import StoreSection from '../components/StoreSection.svelte';
 </script>
 
+<svelte:head>
+	<title>Guard :: Steam Mobile</title>
+</svelte:head>
+
 <Navbar title="Steam Guard" />
 <Tabbar location="3" />
 <div id="guard">

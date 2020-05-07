@@ -4,6 +4,10 @@
 	import StoreSection from '../components/StoreSection.svelte';
 </script>
 
+<svelte:head>
+	<title>Chat :: Steam Mobile</title>
+</svelte:head>
+
 <Navbar title="Chat" />
 <Tabbar location="4" />
 <div id="chat">

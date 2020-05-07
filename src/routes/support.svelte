@@ -4,6 +4,10 @@
 	import SupportCard from '../components/SupportCard.svelte';
 </script>
 
+<svelte:head>
+	<title>Support :: Steam Mobile</title>
+</svelte:head>
+
 <Navbar title="Support" />
 <Tabbar location="5" />
 <div id="support">
