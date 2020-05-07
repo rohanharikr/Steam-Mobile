@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>dota2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2C3445" offset="0%"></stop>
+            <stop stop-color="#232731" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="62" height="62" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dota2">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <g id="exchange-alt-solid(1)" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero" opacity="0.85">
+                <g transform="translate(17.000000, 20.000000)" id="Shape">
+                    <path d="M3.55271368e-15,6.1606627 L3.55271368e-15,5.28075605 C3.55271368e-15,4.55180839 0.608603516,3.96089608 1.359375,3.96089608 L21.75,3.96089608 L21.75,1.32117614 C21.75,0.1461158 23.2169355,-0.440946917 24.070623,0.387870152 L28.601873,4.7874034 C29.132709,5.30286371 29.132709,6.13855505 28.601873,6.65396037 L24.070623,11.0534936 C23.2201641,11.879066 21.75,11.3001974 21.75,10.1202426 L21.75,7.48052268 L1.359375,7.48052268 C0.608603516,7.48052268 3.55271368e-15,6.88961037 3.55271368e-15,6.1606627 Z M27.640625,14.5197759 L7.25,14.5197759 L7.25,11.8800559 C7.25,10.7079103 5.78516016,10.1158431 4.92937695,10.9467499 L0.398126953,15.3462832 C-0.132708984,15.8617435 -0.132708984,16.6974348 0.398126953,17.2128402 L4.92937695,21.6123734 C5.78057227,22.4387707 7.25,21.8580323 7.25,20.6791224 L7.25,18.0394025 L27.640625,18.0394025 C28.3913965,18.0394025 29,17.4484902 29,16.7195425 L29,15.8396358 C29,15.1106882 28.3913965,14.5197759 27.640625,14.5197759 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

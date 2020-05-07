@@ -4,8 +4,8 @@
 	import StoreSection from '../components/StoreSection.svelte';
 </script>
 
-<Navbar title="Steam Store" />
-<Tabbar />
+<Navbar title="Steam Store"/>
+<Tabbar location="1" />
 <div id="store">
 	<StoreSection tag="Special Offers" heading="Midnight Madness" rectangleCard="true" />
 	<StoreSection heading="Featured & Recommended" squareCard="true" />

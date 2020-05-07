@@ -1,4 +1,6 @@
 <script>
+ import PriceBox from './PriceBox.svelte'
+
  export let image,
  			windows = true,
  			mac = false,
@@ -6,7 +8,7 @@
 </script>
 
 <div id="card">
-	<div id="image" style="background-image: url({image});"></div>
+	<div id="image" style="background-image: url({image});"><PriceBox originalPrice="69.99" reducedPrice="59.99" /></div>
 	<div id="cardInfo">
 		<div id="owners">11 friends own this game</div>
 		<div>
@@ -38,16 +40,13 @@
   		display: inline-block;
   		scroll-snap-align: center;
   		margin-left: 10px;
+  		position: relative;
 	}
 
 	#owners {
 		margin-left: 10px;
 		font-size: 12px;
 		color: #a7d6f0;
-	}
-
-	#ownersr::hover{
-		transform: scale(2);
 	}
 
 	#cardInfo {

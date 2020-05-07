@@ -1,13 +1,23 @@
 <script>
-	export let title;
+	export let location;
 </script>
 
 <div id="tabbar">
-	<div class="tabItem selected"><img src="store.svg" />Store</div>
-	<div class="tabItem"><img src="profile.svg" />Profile</div>
-	<div class="tabItem"><img src="guard.svg" />Guard</div>
-	<div class="tabItem"><img src="chat.svg" />Chat</div>
-	<div class="tabItem"><img src="support.svg" />Support</div>
+	<a href="store">
+		<div class="tabItem {location == 1 ? 'selected' : ''}"><img src={location == 1 ? 'storewhite.svg' : 'store.svg'} />Store</div>
+	</a>
+	<a href="profile">
+		<div class="tabItem {location == 2 ? 'selected' : ''}"><img src={location == 2 ? 'profilewhite.svg' : 'profile.svg'} />Profile</div>
+	</a>
+	<a href="guard">
+		<div class="tabItem {location == 3 ? 'selected' : ''}"><img src={location == 3 ? 'guardwhite.svg' : 'guard.svg'} />Guard</div>
+	</a>
+	<a href="chat">
+		<div class="tabItem {location == 4 ? 'selected' : ''}"><img src={location == 4 ? 'chatwhite.svg' : 'chat.svg'} />Chat</div>
+	</a>
+	<a href="support">
+		<div class="tabItem {location == 5 ? 'selected' : ''}"><img src={location == 5 ? 'supportwhite.svg' : 'support.svg'} />Support</div>
+	</a>
 </div>
 
 <style>
