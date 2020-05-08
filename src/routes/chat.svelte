@@ -9,10 +9,10 @@
 </svelte:head>
 
 <Navbar title="Chat" />
-<Tabbar location={4} />
 <div id="chat">
 	<RecentChats title="Recent Chats" />
 </div>
+<Tabbar location={4} />
 
 <style>
 	#chat{

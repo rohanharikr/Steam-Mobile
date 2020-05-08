@@ -14,7 +14,7 @@ status codes -->
 		<RecentChat image="friendone.png" status={1} name="bingotheslayeer" />
 		<RecentChat image="friendtwo.png" status={2} name="fatherdeath" />
 		<RecentChat image="friendthree.png" status={2} name="pyschotherapist" />
-		<RecentChat image="friendfour.png" status={3} name="bingotheslayeer" />
+		<RecentChat image="friendfour.png" status={3} name="fatfather64" />
 	</div>
 </div>
 

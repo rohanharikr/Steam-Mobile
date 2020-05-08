@@ -8,10 +8,10 @@
 </svelte:head>
 
 <Navbar title="Steam Guard" />
-<Tabbar location={3} />
 <div id="guard">
 	72826
 </div>
+<Tabbar location={3} />
 
 <style>
 	#guard{

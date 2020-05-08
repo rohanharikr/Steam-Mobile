@@ -8,7 +8,6 @@
 </svelte:head>
 
 <Navbar title="Profile" />
-<Tabbar location={2} />
 <div id="profile">
 	<div id="top">
 		<img id="profilepicture" src="profilepicture.jpg" />
@@ -21,6 +20,7 @@
 	<div id="level"></div>
 	<div id="level"></div>
 </div>
+<Tabbar location={2} />
 
 <style>
 	#profile{
