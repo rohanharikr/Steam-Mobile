@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>dota2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2C3445" offset="0%"></stop>
+            <stop stop-color="#232731" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="62" height="62" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dota2">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <g id="user-solid(3)" opacity="0.85" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+                <g transform="translate(17.000000, 15.000000)" id="Shape">
+                    <path d="M14.6176471,16 C19.0363971,16 22.6176471,12.41875 22.6176471,8 C22.6176471,3.58125 19.0363971,0 14.6176471,0 C10.1988971,0 6.61764706,3.58125 6.61764706,8 C6.61764706,12.41875 10.1988971,16 14.6176471,16 Z M20.2176471,18 L19.1738971,18 C17.7863971,18.6375 16.2426471,19 14.6176471,19 C12.9926471,19 11.4551471,18.6375 10.0613971,18 L9.01764706,18 C4.38014706,18 0.617647059,21.7625 0.617647059,26.4 L0.617647059,29 C0.617647059,30.65625 1.96139706,32 3.61764706,32 L25.6176471,32 C27.2738971,32 28.6176471,30.65625 28.6176471,29 L28.6176471,26.4 C28.6176471,21.7625 24.8551471,18 20.2176471,18 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
