@@ -6,7 +6,13 @@
 	1 = ingame, 2 online, 3 offline
 status codes -->
 
-<div id="imageholder" class={status === 1 ? "status ingame" : ''}{status === 2 ? "status online" : ''}{status === 3 ? "status offline" : ''} style="background-image: url({image});"><div id="name" class={status === 1 ? "name--ingame" : ''}{status === 2 ? "name--online" : ''}{status === 3 ? "status offline" : ''}>{name}</div></div>
+<div id="imageholder"
+	 class={status === 1 ? "status ingame" : ''}{status === 2 ? "status online" : ''}{status === 3 ? "status offline" : ''} style="background-image: url({image});">
+	<div id="name"
+		 class={status === 1 ? "name--ingame" : ''}{status === 2 ? "name--online" : ''}{status === 3 ? "status offline" : ''}>
+	{name}
+	</div>
+</div>
 
 <style>
 	#imageholder{

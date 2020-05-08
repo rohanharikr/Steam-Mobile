@@ -37,4 +37,13 @@ status codes -->
 	#tabs{
 		display: flex;
 	}
+
+	#card{
+		position: sticky;
+		padding-top: 30px;
+		top: 60px;
+		height: 120px;
+		background-color: black;
+		z-index: 999;
+	}
 </style>

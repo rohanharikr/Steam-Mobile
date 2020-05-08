@@ -2,6 +2,7 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Tabbar from '../components/Tabbar.svelte';
 	import RecentChats from '../components/RecentChats.svelte';
+	import Chats from '../components/Chats.svelte';
 </script>
 
 <svelte:head>
@@ -10,14 +11,17 @@
 
 <Navbar title="Chat" />
 <div id="chat">
+	<!-- Need to make x-scrollable and add notification bubble-->
 	<RecentChats title="Recent Chats" />
+	<!-- Need to make x-scrollable and add notification bubble-->
+	<Chats />
 </div>
 <Tabbar location={4} />
 
 <style>
 	#chat{
-		padding: 90px 0px;
+		padding: 40px 0px;
 		padding-right: 0;
-		padding-bottom: 60px;
+		padding-bottom: 80px;
 	}
 </style>

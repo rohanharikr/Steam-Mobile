@@ -651,7 +651,7 @@ ${validate_component(Tabbar, "Tabbar").$$render($$result, { location: 1 }, {}, {
 
 const css$d = {
 	code: "#imageholder.svelte-rf5a4b{height:50px;width:50px;background-position:center;background-repeat:no-repeat;background-size:cover;border-radius:2px;margin-right:20px;position:relative}#name.svelte-rf5a4b{position:absolute;bottom:-22px;font-size:12px;width:50px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.name--ingame.svelte-rf5a4b{color:#5c7e10}.name--online.svelte-rf5a4b{color:#57cbde}.status.svelte-rf5a4b::after{content:'';position:absolute;width:50px;height:2px;bottom:-28px}.ingame.svelte-rf5a4b::after{background-color:#5c7e10}.online.svelte-rf5a4b::after{background-color:#57cbde}.offline.svelte-rf5a4b{opacity:0.6}.offline.svelte-rf5a4b::after{background-color:#A0A0A0}",
-	map: "{\"version\":3,\"file\":\"RecentChat.svelte\",\"sources\":[\"RecentChat.svelte\"],\"sourcesContent\":[\"<script>\\n\\texport let image, status, name;\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<div id=\\\"imageholder\\\" class={status === 1 ? \\\"status ingame\\\" : ''}{status === 2 ? \\\"status online\\\" : ''}{status === 3 ? \\\"status offline\\\" : ''} style=\\\"background-image: url({image});\\\"><div id=\\\"name\\\" class={status === 1 ? \\\"name--ingame\\\" : ''}{status === 2 ? \\\"name--online\\\" : ''}{status === 3 ? \\\"status offline\\\" : ''}>{name}</div></div>\\n\\n<style>\\n\\t#imageholder{\\n\\t\\theight: 50px;\\n\\t\\twidth: 50px;\\n\\t\\tbackground-position: center;\\n  \\t\\tbackground-repeat: no-repeat;\\n  \\t\\tbackground-size: cover;\\n  \\t\\tborder-radius: 2px;\\n  \\t\\tmargin-right: 20px;\\n  \\t\\tposition: relative;\\n\\t}\\n\\n\\t#name {\\n\\t\\tposition: absolute;\\n\\t\\tbottom: -22px;\\n\\t\\tfont-size: 12px;\\n\\t\\twidth: 50px;\\n\\t\\twhite-space: nowrap;\\n\\t\\toverflow: hidden;\\n\\t\\ttext-overflow: ellipsis;\\n\\t}\\n\\n\\t.name--ingame{\\n\\t\\tcolor: #5c7e10;\\n\\t}\\n\\n\\t.name--online{\\n\\t\\tcolor: #57cbde;\\n\\t}\\n\\n\\t.name--offline{\\n\\t\\tcolor: #A0A0A0;\\n\\t}\\n\\n\\t.status::after{\\n\\t\\tcontent: '';\\n\\t\\tposition: absolute;\\n\\t\\twidth: 50px;\\n\\t\\theight: 2px;\\n\\t\\tbottom: -28px;\\n\\t}\\n\\n\\t.ingame::after{\\n\\t\\tbackground-color: #5c7e10;\\n\\t}\\n\\n\\t.online::after{\\n\\t\\tbackground-color: #57cbde;\\n\\t}\\n\\n\\t.offline{\\n\\t\\topacity: 0.6;\\n\\t}\\n\\n\\t.offline::after{\\n\\t\\tbackground-color: #A0A0A0;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAWC,0BAAY,CAAC,AACZ,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,mBAAmB,CAAE,MAAM,CACzB,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,aAAa,CAAE,GAAG,CAClB,YAAY,CAAE,IAAI,CAClB,QAAQ,CAAE,QAAQ,AACrB,CAAC,AAED,KAAK,cAAC,CAAC,AACN,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,KAAK,CACb,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,IAAI,CACX,WAAW,CAAE,MAAM,CACnB,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,QAAQ,AACxB,CAAC,AAED,2BAAa,CAAC,AACb,KAAK,CAAE,OAAO,AACf,CAAC,AAED,2BAAa,CAAC,AACb,KAAK,CAAE,OAAO,AACf,CAAC,AAMD,qBAAO,OAAO,CAAC,AACd,OAAO,CAAE,EAAE,CACX,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,KAAK,AACd,CAAC,AAED,qBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,qBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,sBAAQ,CAAC,AACR,OAAO,CAAE,GAAG,AACb,CAAC,AAED,sBAAQ,OAAO,CAAC,AACf,gBAAgB,CAAE,OAAO,AAC1B,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"RecentChat.svelte\",\"sources\":[\"RecentChat.svelte\"],\"sourcesContent\":[\"<script>\\n\\texport let image, status, name;\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<div id=\\\"imageholder\\\"\\n\\t class={status === 1 ? \\\"status ingame\\\" : ''}{status === 2 ? \\\"status online\\\" : ''}{status === 3 ? \\\"status offline\\\" : ''} style=\\\"background-image: url({image});\\\">\\n\\t<div id=\\\"name\\\"\\n\\t\\t class={status === 1 ? \\\"name--ingame\\\" : ''}{status === 2 ? \\\"name--online\\\" : ''}{status === 3 ? \\\"status offline\\\" : ''}>\\n\\t{name}\\n\\t</div>\\n</div>\\n\\n<style>\\n\\t#imageholder{\\n\\t\\theight: 50px;\\n\\t\\twidth: 50px;\\n\\t\\tbackground-position: center;\\n  \\t\\tbackground-repeat: no-repeat;\\n  \\t\\tbackground-size: cover;\\n  \\t\\tborder-radius: 2px;\\n  \\t\\tmargin-right: 20px;\\n  \\t\\tposition: relative;\\n\\t}\\n\\n\\t#name {\\n\\t\\tposition: absolute;\\n\\t\\tbottom: -22px;\\n\\t\\tfont-size: 12px;\\n\\t\\twidth: 50px;\\n\\t\\twhite-space: nowrap;\\n\\t\\toverflow: hidden;\\n\\t\\ttext-overflow: ellipsis;\\n\\t}\\n\\n\\t.name--ingame{\\n\\t\\tcolor: #5c7e10;\\n\\t}\\n\\n\\t.name--online{\\n\\t\\tcolor: #57cbde;\\n\\t}\\n\\n\\t.name--offline{\\n\\t\\tcolor: #A0A0A0;\\n\\t}\\n\\n\\t.status::after{\\n\\t\\tcontent: '';\\n\\t\\tposition: absolute;\\n\\t\\twidth: 50px;\\n\\t\\theight: 2px;\\n\\t\\tbottom: -28px;\\n\\t}\\n\\n\\t.ingame::after{\\n\\t\\tbackground-color: #5c7e10;\\n\\t}\\n\\n\\t.online::after{\\n\\t\\tbackground-color: #57cbde;\\n\\t}\\n\\n\\t.offline{\\n\\t\\topacity: 0.6;\\n\\t}\\n\\n\\t.offline::after{\\n\\t\\tbackground-color: #A0A0A0;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAiBC,0BAAY,CAAC,AACZ,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACX,mBAAmB,CAAE,MAAM,CACzB,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,aAAa,CAAE,GAAG,CAClB,YAAY,CAAE,IAAI,CAClB,QAAQ,CAAE,QAAQ,AACrB,CAAC,AAED,KAAK,cAAC,CAAC,AACN,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,KAAK,CACb,SAAS,CAAE,IAAI,CACf,KAAK,CAAE,IAAI,CACX,WAAW,CAAE,MAAM,CACnB,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,QAAQ,AACxB,CAAC,AAED,2BAAa,CAAC,AACb,KAAK,CAAE,OAAO,AACf,CAAC,AAED,2BAAa,CAAC,AACb,KAAK,CAAE,OAAO,AACf,CAAC,AAMD,qBAAO,OAAO,CAAC,AACd,OAAO,CAAE,EAAE,CACX,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,KAAK,AACd,CAAC,AAED,qBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,qBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,sBAAQ,CAAC,AACR,OAAO,CAAE,GAAG,AACb,CAAC,AAED,sBAAQ,OAAO,CAAC,AACf,gBAAgB,CAAE,OAAO,AAC1B,CAAC\"}"
 };
 
 const RecentChat = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -663,14 +663,15 @@ const RecentChat = create_ssr_component(($$result, $$props, $$bindings, $$slots)
 
 	return `
 
-<div id="${"imageholder"}" class="${escape(status === 1 ? "status ingame" : "") + escape(status === 2 ? "status online" : "") + escape(status === 3 ? "status offline" : "") + " svelte-rf5a4b"}" style="${"background-image: url(" + escape(image) + ");"}"><div id="${"name"}" class="${escape(status === 1 ? "name--ingame" : "") + escape(status === 2 ? "name--online" : "") + escape(status === 3 ? "status offline" : "") + " svelte-rf5a4b"}">${escape(name)}</div></div>`;
+<div id="${"imageholder"}" class="${escape(status === 1 ? "status ingame" : "") + escape(status === 2 ? "status online" : "") + escape(status === 3 ? "status offline" : "") + " svelte-rf5a4b"}" style="${"background-image: url(" + escape(image) + ");"}"><div id="${"name"}" class="${escape(status === 1 ? "name--ingame" : "") + escape(status === 2 ? "name--online" : "") + escape(status === 3 ? "status offline" : "") + " svelte-rf5a4b"}">${escape(name)}</div>
+</div>`;
 });
 
 /* src/components/RecentChats.svelte generated by Svelte v3.22.2 */
 
 const css$e = {
-	code: "h3.svelte-1sgb1tx{color:#a7d6f0;text-transform:uppercase;font-weight:500;font-size:12px;padding:0px 30px}#list.svelte-1sgb1tx{margin:14px 0px;padding-left:30px;display:flex;align-items:center}",
-	map: "{\"version\":3,\"file\":\"RecentChats.svelte\",\"sources\":[\"RecentChats.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport RecentChat from './RecentChat.svelte'\\n\\n\\texport let title;\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<div id=\\\"card\\\">\\n\\t<h3>Recent Chats</h3>\\n\\t<div id=\\\"list\\\">\\n\\t\\t<RecentChat image=\\\"friendone.png\\\" status={1} name=\\\"bingotheslayeer\\\" />\\n\\t\\t<RecentChat image=\\\"friendtwo.png\\\" status={2} name=\\\"fatherdeath\\\" />\\n\\t\\t<RecentChat image=\\\"friendthree.png\\\" status={2} name=\\\"pyschotherapist\\\" />\\n\\t\\t<RecentChat image=\\\"friendfour.png\\\" status={3} name=\\\"fatfather64\\\" />\\n\\t</div>\\n</div>\\n\\n<style>\\n\\th3{\\n\\t\\tcolor: #a7d6f0;\\n\\t\\ttext-transform: uppercase;\\n\\t\\tfont-weight: 500;\\n\\t\\tfont-size: 12px;\\n\\t\\tpadding: 0px 30px;\\n\\t}\\n\\n\\t#list {\\n\\t\\tmargin: 14px 0px;\\n\\t\\tpadding-left: 30px;\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t}\\n\\n\\t#tabs{\\n\\t\\tdisplay: flex;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAqBC,iBAAE,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,GAAG,CAAC,IAAI,AAClB,CAAC,AAED,KAAK,eAAC,CAAC,AACN,MAAM,CAAE,IAAI,CAAC,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,AACpB,CAAC\"}"
+	code: "h3.svelte-15bq6de{color:#a7d6f0;text-transform:uppercase;font-weight:500;font-size:12px;padding:0px 30px}#list.svelte-15bq6de{margin:14px 0px;padding-left:30px;display:flex;align-items:center}#card.svelte-15bq6de{position:sticky;padding-top:30px;top:60px;height:120px;background-color:black;z-index:999}",
+	map: "{\"version\":3,\"file\":\"RecentChats.svelte\",\"sources\":[\"RecentChats.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport RecentChat from './RecentChat.svelte'\\n\\n\\texport let title;\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<div id=\\\"card\\\">\\n\\t<h3>Recent Chats</h3>\\n\\t<div id=\\\"list\\\">\\n\\t\\t<RecentChat image=\\\"friendone.png\\\" status={1} name=\\\"bingotheslayeer\\\" />\\n\\t\\t<RecentChat image=\\\"friendtwo.png\\\" status={2} name=\\\"fatherdeath\\\" />\\n\\t\\t<RecentChat image=\\\"friendthree.png\\\" status={2} name=\\\"pyschotherapist\\\" />\\n\\t\\t<RecentChat image=\\\"friendfour.png\\\" status={3} name=\\\"fatfather64\\\" />\\n\\t</div>\\n</div>\\n\\n<style>\\n\\th3{\\n\\t\\tcolor: #a7d6f0;\\n\\t\\ttext-transform: uppercase;\\n\\t\\tfont-weight: 500;\\n\\t\\tfont-size: 12px;\\n\\t\\tpadding: 0px 30px;\\n\\t}\\n\\n\\t#list {\\n\\t\\tmargin: 14px 0px;\\n\\t\\tpadding-left: 30px;\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t}\\n\\n\\t#tabs{\\n\\t\\tdisplay: flex;\\n\\t}\\n\\n\\t#card{\\n\\t\\tposition: sticky;\\n\\t\\tpadding-top: 30px;\\n\\t\\ttop: 60px;\\n\\t\\theight: 120px;\\n\\t\\tbackground-color: black;\\n\\t\\tz-index: 999;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAqBC,iBAAE,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,IAAI,CACf,OAAO,CAAE,GAAG,CAAC,IAAI,AAClB,CAAC,AAED,KAAK,eAAC,CAAC,AACN,MAAM,CAAE,IAAI,CAAC,GAAG,CAChB,YAAY,CAAE,IAAI,CAClB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,AACpB,CAAC,AAMD,oBAAK,CAAC,AACL,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,IAAI,CACjB,GAAG,CAAE,IAAI,CACT,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,KAAK,CACvB,OAAO,CAAE,GAAG,AACb,CAAC\"}"
 };
 
 const RecentChats = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -680,8 +681,8 @@ const RecentChats = create_ssr_component(($$result, $$props, $$bindings, $$slots
 
 	return `
 
-<div id="${"card"}"><h3 class="${"svelte-1sgb1tx"}">Recent Chats</h3>
-	<div id="${"list"}" class="${"svelte-1sgb1tx"}">${validate_component(RecentChat, "RecentChat").$$render(
+<div id="${"card"}" class="${"svelte-15bq6de"}"><h3 class="${"svelte-15bq6de"}">Recent Chats</h3>
+	<div id="${"list"}" class="${"svelte-15bq6de"}">${validate_component(RecentChat, "RecentChat").$$render(
 		$$result,
 		{
 			image: "friendone.png",
@@ -724,20 +725,112 @@ const RecentChats = create_ssr_component(($$result, $$props, $$bindings, $$slots
 </div>`;
 });
 
-/* src/routes/chat.svelte generated by Svelte v3.22.2 */
+/* src/components/ChatsTile.svelte generated by Svelte v3.22.2 */
 
 const css$f = {
-	code: "#chat.svelte-ak3tq2{padding:90px 0px;padding-right:0;padding-bottom:60px}",
-	map: "{\"version\":3,\"file\":\"chat.svelte\",\"sources\":[\"chat.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport Navbar from '../components/Navbar.svelte';\\n\\timport Tabbar from '../components/Tabbar.svelte';\\n\\timport RecentChats from '../components/RecentChats.svelte';\\n</script>\\n\\n<svelte:head>\\n\\t<title>Chat :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Chat\\\" />\\n<div id=\\\"chat\\\">\\n\\t<RecentChats title=\\\"Recent Chats\\\" />\\n</div>\\n<Tabbar location={4} />\\n\\n<style>\\n\\t#chat{\\n\\t\\tpadding: 90px 0px;\\n\\t\\tpadding-right: 0;\\n\\t\\tpadding-bottom: 60px;\\n\\t}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAiBC,mBAAK,CAAC,AACL,OAAO,CAAE,IAAI,CAAC,GAAG,CACjB,aAAa,CAAE,CAAC,CAChB,cAAc,CAAE,IAAI,AACrB,CAAC\"}"
+	code: "li.svelte-16yjp43{display:flex;align-items:center;padding:14px 0px}#username.svelte-16yjp43{color:#5c7e10}#usergame.svelte-16yjp43,#lastonline.svelte-16yjp43{font-size:12px}#usergame.svelte-16yjp43{color:#5c7e10}#lastonline.svelte-16yjp43{color:#9099a1}.onlineusername.svelte-16yjp43{color:#6fbfec !important;opacity:0.8}.onlinegamename.svelte-16yjp43{color:#a7d6f0 !important;opacity:0.8}.offline.svelte-16yjp43{color:#eaeaea !important}#userimage.svelte-16yjp43{width:40px;height:40px;background-position:center;background-repeat:no-repeat;background-size:cover;border-radius:2px}.status.svelte-16yjp43::after{content:'';position:absolute;width:3px;height:40px;margin-left:44px}.ingame.svelte-16yjp43::after{background-color:#5c7e10}.online.svelte-16yjp43::after{background-color:#57cbde}.offline.svelte-16yjp43::after{background-color:#9099a1}#info.svelte-16yjp43{margin-left:15px}.statusoffline.svelte-16yjp43{opacity:0.6 !important}",
+	map: "{\"version\":3,\"file\":\"ChatsTile.svelte\",\"sources\":[\"ChatsTile.svelte\"],\"sourcesContent\":[\"<script>\\n\\texport let userName, gameName, userImage, status, timestamp, offline;\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<li class={status === 1 ? \\\"status ingame\\\" : \\\"\\\"}{status === 2 ? \\\"status online\\\" : \\\"\\\"}{status === 3 ? \\\"status offline statusoffline\\\"  : \\\"\\\"}>\\n\\t<div id=\\\"userimage\\\" style=\\\"background-image:url({userImage});\\\"></div>\\n\\t<div id=\\\"info\\\">\\n\\t\\t\\t<div id=\\\"username\\\" class={!gameName ? \\\"onlineusername\\\" : ''}>{userName}</div>\\n\\t\\t{#if !offline}\\n\\t\\t\\t<div id=\\\"usergame\\\" class={!gameName ? \\\"onlinegamename\\\" : ''}>{!gameName ? 'Online' : gameName}</div>\\n\\t\\t{:else if offline}\\n\\t\\t\\t<div id=\\\"lastonline\\\">Last online {timestamp} days ago</div>\\n\\t\\t{/if}\\n\\t</div>\\n</li>\\n\\n<style>\\n\\tli{\\n\\t\\tdisplay: flex;\\n\\t\\talign-items: center;\\n\\t\\tpadding: 14px 0px;\\n\\t}\\n\\n\\t#username{\\n\\t\\tcolor: #5c7e10;\\n\\t}\\n\\n\\t#usergame, #lastonline{\\n\\t\\tfont-size: 12px;\\n\\t}\\n\\n\\t#usergame {\\n\\t\\tcolor: #5c7e10;\\n\\t}\\n\\n\\t#lastonline {\\n\\t\\tcolor: #9099a1;\\n\\t}\\n\\n\\t.onlineusername{\\n\\t\\tcolor: #6fbfec !important;\\n\\t\\topacity: 0.8;\\n\\t}\\n\\n\\t.onlinegamename{\\n\\t\\tcolor: #a7d6f0 !important;\\n\\t\\topacity: 0.8;\\n\\t}\\n\\n\\t.offline{\\n\\t\\tcolor: #eaeaea !important;\\n\\t}\\n\\n\\t#userimage{\\n\\t\\twidth: 40px;\\n\\t\\theight: 40px;\\n\\t\\tbackground-position: center;\\n  \\t\\tbackground-repeat: no-repeat;\\n  \\t\\tbackground-size: cover;\\n  \\t\\tborder-radius: 2px;\\n\\t}\\n\\n\\t.status::after{\\n\\t\\tcontent: '';\\n\\t\\tposition: absolute;\\n\\t\\twidth: 3px;\\n\\t\\theight: 40px;\\n\\t\\tmargin-left: 44px;\\n\\t}\\n\\n\\t.ingame::after{\\n\\t\\tbackground-color: #5c7e10;\\n\\t}\\n\\n\\t.online::after{\\n\\t\\tbackground-color: #57cbde;\\n\\t}\\n\\n\\n\\t.offline::after{\\n\\t\\tbackground-color: #9099a1;\\n\\t}\\n\\n\\t#info{\\n\\t\\tmargin-left: 15px;\\n\\t}\\t\\n\\n\\t.statusoffline{\\n\\t\\topacity: 0.6 !important;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAqBC,iBAAE,CAAC,AACF,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,OAAO,CAAE,IAAI,CAAC,GAAG,AAClB,CAAC,AAED,wBAAS,CAAC,AACT,KAAK,CAAE,OAAO,AACf,CAAC,AAED,wBAAS,CAAE,0BAAW,CAAC,AACtB,SAAS,CAAE,IAAI,AAChB,CAAC,AAED,SAAS,eAAC,CAAC,AACV,KAAK,CAAE,OAAO,AACf,CAAC,AAED,WAAW,eAAC,CAAC,AACZ,KAAK,CAAE,OAAO,AACf,CAAC,AAED,8BAAe,CAAC,AACf,KAAK,CAAE,OAAO,CAAC,UAAU,CACzB,OAAO,CAAE,GAAG,AACb,CAAC,AAED,8BAAe,CAAC,AACf,KAAK,CAAE,OAAO,CAAC,UAAU,CACzB,OAAO,CAAE,GAAG,AACb,CAAC,AAED,uBAAQ,CAAC,AACR,KAAK,CAAE,OAAO,CAAC,UAAU,AAC1B,CAAC,AAED,yBAAU,CAAC,AACV,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,mBAAmB,CAAE,MAAM,CACzB,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,aAAa,CAAE,GAAG,AACrB,CAAC,AAED,sBAAO,OAAO,CAAC,AACd,OAAO,CAAE,EAAE,CACX,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CACZ,WAAW,CAAE,IAAI,AAClB,CAAC,AAED,sBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,sBAAO,OAAO,CAAC,AACd,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAGD,uBAAQ,OAAO,CAAC,AACf,gBAAgB,CAAE,OAAO,AAC1B,CAAC,AAED,oBAAK,CAAC,AACL,WAAW,CAAE,IAAI,AAClB,CAAC,AAED,6BAAc,CAAC,AACd,OAAO,CAAE,GAAG,CAAC,UAAU,AACxB,CAAC\"}"
+};
+
+const ChatsTile = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	let { userName } = $$props,
+		{ gameName } = $$props,
+		{ userImage } = $$props,
+		{ status } = $$props,
+		{ timestamp } = $$props,
+		{ offline } = $$props;
+
+	if ($$props.userName === void 0 && $$bindings.userName && userName !== void 0) $$bindings.userName(userName);
+	if ($$props.gameName === void 0 && $$bindings.gameName && gameName !== void 0) $$bindings.gameName(gameName);
+	if ($$props.userImage === void 0 && $$bindings.userImage && userImage !== void 0) $$bindings.userImage(userImage);
+	if ($$props.status === void 0 && $$bindings.status && status !== void 0) $$bindings.status(status);
+	if ($$props.timestamp === void 0 && $$bindings.timestamp && timestamp !== void 0) $$bindings.timestamp(timestamp);
+	if ($$props.offline === void 0 && $$bindings.offline && offline !== void 0) $$bindings.offline(offline);
+	$$result.css.add(css$f);
+
+	return `
+
+<li class="${escape(status === 1 ? "status ingame" : "") + escape(status === 2 ? "status online" : "") + escape(status === 3 ? "status offline statusoffline" : "") + " svelte-16yjp43"}"><div id="${"userimage"}" style="${"background-image:url(" + escape(userImage) + ");"}" class="${"svelte-16yjp43"}"></div>
+	<div id="${"info"}" class="${"svelte-16yjp43"}"><div id="${"username"}" class="${escape(null_to_empty(!gameName ? "onlineusername" : "")) + " svelte-16yjp43"}">${escape(userName)}</div>
+		${!offline
+	? `<div id="${"usergame"}" class="${escape(null_to_empty(!gameName ? "onlinegamename" : "")) + " svelte-16yjp43"}">${escape(!gameName ? "Online" : gameName)}</div>`
+	: `${offline
+		? `<div id="${"lastonline"}" class="${"svelte-16yjp43"}">Last online ${escape(timestamp)} days ago</div>`
+		: ``}`}</div>
+</li>`;
+});
+
+/* src/components/Chats.svelte generated by Svelte v3.22.2 */
+
+const css$g = {
+	code: "#tabs.svelte-16sc42{display:flex;padding:0px 30px;width:150px;justify-content:space-between;align-items:center}h3.svelte-16sc42{color:#9099a1;text-transform:uppercase;font-weight:500;font-size:12px}ul.svelte-16sc42{list-style:none;padding:0px 30px;background-color:#0f0b20;position:relative;margin:0}#card.svelte-16sc42{margin-top:30px}.selectedtab.svelte-16sc42{color:#a7d6f0}#tabscontainer.svelte-16sc42{position:sticky;padding-top:30px;padding-bottom:10px;top:200px;z-index:998;background-color:black}",
+	map: "{\"version\":3,\"file\":\"Chats.svelte\",\"sources\":[\"Chats.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport ChatsTile from './ChatsTile.svelte';\\n\\n\\tlet offline = false, onlineusers = 3, offlineusers = 2;\\n\\n\\n</script>\\n\\n<!-- status codes\\n\\t1 = ingame, 2 online, 3 offline\\nstatus codes -->\\n\\n<div id=\\\"card\\\">\\n\\t<div id=\\\"tabscontainer\\\">\\n\\t\\t<div id=\\\"tabs\\\">\\n\\t\\t\\t<h3 class={!offline ? \\\"selectedtab\\\" : ''} on:click={() => {offline = false}}>Online ({onlineusers})</h3>\\n\\t\\t\\t<h3 class={offline ? \\\"selectedtab\\\" : ''} on:click={() => {offline = true}}>Offline ({offlineusers})</h3>\\n\\t\\t</div>\\n\\t</div>\\n\\t{#if !offline}\\n\\t\\t<ul>\\n\\t\\t\\t<ChatsTile userName=\\\"bingotheslayer\\\" gameName=\\\"Dank Souls 3\\\" userImage=\\\"friendone.png\\\" status={1} {offline} />\\n\\t\\t\\t<ChatsTile userName=\\\"fatherdeath\\\" userImage=\\\"friendtwo.png\\\" status={2} {offline} />\\n\\t\\t\\t<ChatsTile userName=\\\"pyschotherapist\\\" userImage=\\\"friendthree.png\\\" status={2} {offline} />\\n\\t\\t</ul>\\n\\t{/if}\\n\\t{#if offline}\\n\\t\\t<ul>\\n\\t\\t\\t<ChatsTile userName=\\\"fatfather64\\\" gameName=\\\"Grand Theft Auto: San Andreas\\\" userImage=\\\"friendfour.png\\\" status={3} {offline} timestamp=\\\"6\\\" />\\n\\t\\t\\t<ChatsTile userName=\\\"dingdongding\\\" gameName=\\\"Grand Theft Auto: San Andreas\\\" userImage=\\\"profilepicture.jpg\\\" status={3} {offline} timestamp=\\\"12\\\"  />\\n\\t\\t</ul>\\n\\t{/if}\\n</div>\\n\\n<style>\\n\\t#tabs{\\n\\t\\tdisplay: flex;\\n\\t\\tpadding: 0px 30px;\\n\\t\\twidth: 150px;\\n\\t\\tjustify-content: space-between;\\n\\t\\talign-items: center;\\n\\t}\\n\\n\\th3{\\n\\t\\tcolor: #9099a1;\\n\\t\\ttext-transform: uppercase;\\n\\t\\tfont-weight: 500;\\n\\t\\tfont-size: 12px;\\n\\t}\\n\\n\\tul{\\n\\t\\tlist-style: none;\\n\\t\\tpadding: 0px 30px;\\n\\t\\tbackground-color: #0f0b20;\\n\\t\\tposition: relative;\\n\\t\\tmargin: 0;\\n\\t}\\n\\n\\t#card{\\n\\t\\tmargin-top: 30px;\\n\\t}\\n\\n\\t.selectedtab{\\n\\t\\tcolor: #a7d6f0;\\n\\t}\\n\\n\\t#tabscontainer{\\n\\t\\tposition: sticky;\\n\\t\\tpadding-top: 30px;\\n\\t\\tpadding-bottom: 10px;\\n\\t\\ttop: 200px;\\n\\t\\tz-index: 998;\\n\\t\\tbackground-color: black;\\n\\t}\\n</style>\"],\"names\":[],\"mappings\":\"AAmCC,mBAAK,CAAC,AACL,OAAO,CAAE,IAAI,CACb,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,aAAa,CAC9B,WAAW,CAAE,MAAM,AACpB,CAAC,AAED,gBAAE,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,IAAI,AAChB,CAAC,AAED,gBAAE,CAAC,AACF,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,gBAAgB,CAAE,OAAO,CACzB,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,CAAC,AACV,CAAC,AAED,mBAAK,CAAC,AACL,UAAU,CAAE,IAAI,AACjB,CAAC,AAED,0BAAY,CAAC,AACZ,KAAK,CAAE,OAAO,AACf,CAAC,AAED,4BAAc,CAAC,AACd,QAAQ,CAAE,MAAM,CAChB,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,IAAI,CACpB,GAAG,CAAE,KAAK,CACV,OAAO,CAAE,GAAG,CACZ,gBAAgB,CAAE,KAAK,AACxB,CAAC\"}"
+};
+
+const Chats = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	let offline = false, onlineusers = 3, offlineusers = 2;
+	$$result.css.add(css$g);
+
+	return `
+
+<div id="${"card"}" class="${"svelte-16sc42"}"><div id="${"tabscontainer"}" class="${"svelte-16sc42"}"><div id="${"tabs"}" class="${"svelte-16sc42"}"><h3 class="${escape(null_to_empty( "selectedtab" )) + " svelte-16sc42"}">Online (${escape(onlineusers)})</h3>
+			<h3 class="${escape(null_to_empty( "")) + " svelte-16sc42"}">Offline (${escape(offlineusers)})</h3></div></div>
+	${ `<ul class="${"svelte-16sc42"}">${validate_component(ChatsTile, "ChatsTile").$$render(
+			$$result,
+			{
+				userName: "bingotheslayer",
+				gameName: "Dank Souls 3",
+				userImage: "friendone.png",
+				status: 1,
+				offline
+			},
+			{},
+			{}
+		)}
+			${validate_component(ChatsTile, "ChatsTile").$$render(
+			$$result,
+			{
+				userName: "fatherdeath",
+				userImage: "friendtwo.png",
+				status: 2,
+				offline
+			},
+			{},
+			{}
+		)}
+			${validate_component(ChatsTile, "ChatsTile").$$render(
+			$$result,
+			{
+				userName: "pyschotherapist",
+				userImage: "friendthree.png",
+				status: 2,
+				offline
+			},
+			{},
+			{}
+		)}</ul>`
+	}
+	${ ``}
+</div>`;
+});
+
+/* src/routes/chat.svelte generated by Svelte v3.22.2 */
+
+const css$h = {
+	code: "#chat.svelte-18avg01{padding:40px 0px;padding-right:0;padding-bottom:80px}",
+	map: "{\"version\":3,\"file\":\"chat.svelte\",\"sources\":[\"chat.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport Navbar from '../components/Navbar.svelte';\\n\\timport Tabbar from '../components/Tabbar.svelte';\\n\\timport RecentChats from '../components/RecentChats.svelte';\\n\\timport Chats from '../components/Chats.svelte';\\n</script>\\n\\n<svelte:head>\\n\\t<title>Chat :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Chat\\\" />\\n<div id=\\\"chat\\\">\\n\\t<!-- Need to make x-scrollable and add notification bubble-->\\n\\t<RecentChats title=\\\"Recent Chats\\\" />\\n\\t<!-- Need to make x-scrollable and add notification bubble-->\\n\\t<Chats />\\n</div>\\n<Tabbar location={4} />\\n\\n<style>\\n\\t#chat{\\n\\t\\tpadding: 40px 0px;\\n\\t\\tpadding-right: 0;\\n\\t\\tpadding-bottom: 80px;\\n\\t}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAqBC,oBAAK,CAAC,AACL,OAAO,CAAE,IAAI,CAAC,GAAG,CACjB,aAAa,CAAE,CAAC,CAChB,cAAc,CAAE,IAAI,AACrB,CAAC\"}"
 };
 
 const Chat = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
-	$$result.css.add(css$f);
+	$$result.css.add(css$h);
 
 	return `${($$result.head += `${($$result.title = `<title>Chat :: Steam Mobile</title>`, "")}`, "")}
 
 ${validate_component(Navbar, "Navbar").$$render($$result, { title: "Chat" }, {}, {})}
-<div id="${"chat"}" class="${"svelte-ak3tq2"}">${validate_component(RecentChats, "RecentChats").$$render($$result, { title: "Recent Chats" }, {}, {})}</div>
+<div id="${"chat"}" class="${"svelte-18avg01"}">
+	${validate_component(RecentChats, "RecentChats").$$render($$result, { title: "Recent Chats" }, {}, {})}
+	
+	${validate_component(Chats, "Chats").$$render($$result, {}, {}, {})}</div>
 ${validate_component(Tabbar, "Tabbar").$$render($$result, { location: 4 }, {}, {})}`;
 });
 
@@ -749,7 +842,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, $$slots) => 
 
 /* src/routes/_error.svelte generated by Svelte v3.22.2 */
 
-const css$g = {
+const css$i = {
 	code: "@media(min-width: 480px){}",
 	map: "{\"version\":3,\"file\":\"_error.svelte\",\"sources\":[\"_error.svelte\"],\"sourcesContent\":[\"<script>\\n\\texport let status;\\n\\texport let error;\\n\\n\\tconst dev = undefined === 'development';\\n</script>\\n\\n<style>\\n\\th1, p {\\n\\t\\tmargin: 0 auto;\\n\\t}\\n\\n\\th1 {\\n\\t\\tfont-size: 2.8em;\\n\\t\\tfont-weight: 700;\\n\\t\\tmargin: 0 0 0.5em 0;\\n\\t}\\n\\n\\tp {\\n\\t\\tmargin: 1em auto;\\n\\t}\\n\\n\\t@media (min-width: 480px) {\\n\\t\\th1 {\\n\\t\\t\\tfont-size: 4em;\\n\\t\\t}\\n\\t}\\n</style>\\n\\n<svelte:head>\\n\\t<title>{status}</title>\\n</svelte:head>\\n\\n\"],\"names\":[],\"mappings\":\"AAsBC,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AAI3B,CAAC\"}"
 };
@@ -759,7 +852,7 @@ const Error$1 = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 	let { error } = $$props;
 	if ($$props.status === void 0 && $$bindings.status && status !== void 0) $$bindings.status(status);
 	if ($$props.error === void 0 && $$bindings.error && error !== void 0) $$bindings.error(error);
-	$$result.css.add(css$g);
+	$$result.css.add(css$i);
 	return `${($$result.head += `${($$result.title = `<title>${escape(status)}</title>`, "")}`, "")}`;
 });
 
