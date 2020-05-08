@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Navbar title="Steam Store"/>
-<Tabbar location="1" />
+<Tabbar location={1} />
 <div id="store">
 	<StoreSection tag="Special Offers" heading="Midnight Madness" rectangleCard="true" />
 	<StoreSection heading="Featured & Recommended" squareCard="true" />

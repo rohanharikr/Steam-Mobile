@@ -1,7 +1,6 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
 	import Tabbar from '../components/Tabbar.svelte';
-	import StoreSection from '../components/StoreSection.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +8,7 @@
 </svelte:head>
 
 <Navbar title="Profile" />
-<Tabbar location="2" />
+<Tabbar location={2} />
 <div id="profile">
 	<div id="top">
 		<img id="profilepicture" src="profilepicture.jpg" />

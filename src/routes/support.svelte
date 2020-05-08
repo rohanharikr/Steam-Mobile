@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Navbar title="Support" />
-<Tabbar location="5" />
+<Tabbar location={5} />
 <div id="support">
 	<SupportCard title="Recent Products" />
 	<SupportCard single="true" name="Configure app" />
