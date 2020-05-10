@@ -1,6 +1,0 @@
-import { J as writable } from './client.6ab7ec82.js'
-
-const username = writable('bingotheslayer')
-
-export { username as u }
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3RvcmVzLjIxYzgxMDE5LmpzIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvcm91dGVzL3N0b3Jlcy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB3cml0YWJsZSB9IGZyb20gJ3N2ZWx0ZS9zdG9yZSdcblxuZXhwb3J0IGNvbnN0IHVzZXJuYW1lID0gd3JpdGFibGUoJ2JpbmdvdGhlc2xheWVyJyk7XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFWSxNQUFDLFFBQVEsR0FBRyxRQUFRLENBQUMsZ0JBQWdCOzs7OyJ9

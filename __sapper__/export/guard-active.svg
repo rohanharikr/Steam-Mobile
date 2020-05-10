@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>guard-active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="5.70934256%" y1="0%" x2="94.2789682%" y2="99.9868039%" id="linearGradient-1">
+            <stop stop-color="#027AFF" offset="0%"></stop>
+            <stop stop-color="#AE06D2" offset="99.9973606%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-127.000000, -104.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="guard-active" transform="translate(127.000000, 104.000000)">
+                <path d="M15.4854167,2.77854458 L9.08541667,0.122035487 C8.69168416,-0.0406784955 8.24914917,-0.0406784955 7.85541667,0.122035487 L1.45541667,2.77854458 C0.85875,3.02427167 0.46875,3.60538304 0.46875,4.2495865 C0.46875,10.8410497 4.28541667,15.3969628 7.85208333,16.8779666 C8.24541667,17.0406778 8.68875,17.0406778 9.08208333,16.8779666 C11.93875,15.6924994 16.46875,11.5981548 16.46875,4.2495865 C16.46875,3.60538304 16.07875,3.02427167 15.4854167,2.77854458 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
