@@ -1,6 +1,8 @@
 {
-  "svelteSortOrder" : "scripts-markup-style",
-  "svelteStrictMode": true,
-  "svelteBracketNewLine": true,
-  "svelteAllowShorthand": false
+  "svelteSortOrder" : "scripts-markup-styles",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "plugins": ["prettier-plugin-svelte"]
 }

@@ -1,12 +1,13 @@
 <script>
-	export let name, logo, height;
+  export let name, logo, height
 </script>
 
-<img src="{logo}" style="height:{height}" />{name}
+<img src={logo} style="height:{height}" />
+{name}
 
 <style>
-	img {
-		height: 42px;
-		margin-right: 16px;
-	}
+  img {
+    height: 42px;
+    margin-right: 16px;
+  }
 </style>
