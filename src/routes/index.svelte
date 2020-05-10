@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
 	import Tabbar from '../components/Tabbar.svelte';
+	import SteamGuard from '../components/SteamGuard.svelte';
 </script>
 
 <svelte:head>
@@ -9,14 +10,15 @@
 
 <Navbar title="Steam Guard" />
 <div id="guard">
-	72826
+	<SteamGuard />
+	<div style="height: 2000px"></div>
 </div>
 <Tabbar location={3} />
 
 <style>
-	#guard{
-		padding: 90px 30px;
-		padding-right: 0;
+	#guard {
+		padding: 0;
 		padding-bottom: 60px;
+		text-align: center;
 	}
 </style>

@@ -1,6 +1,13 @@
 <script>
 	import Navbar from '../components/Navbar.svelte';
 	import Tabbar from '../components/Tabbar.svelte';
+	import { username } from './stores.js';
+
+	let username_value;
+
+	const unsubscribe = username.subscribe(value => {
+		username_value = value;
+	});
 </script>
 
 <svelte:head>
@@ -12,7 +19,7 @@
 	<div id="top">
 		<img id="profilepicture" src="profilepicture.jpg" />
 		<div id="maininfo">
-			<h2>thoran</h2>
+			<h2>{username_value}</h2>
 			<h3>Rohan Harikumar</h3>
 		</div>
 	</div>
