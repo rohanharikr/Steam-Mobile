@@ -257,7 +257,7 @@ const SteamGuard = create_ssr_component(($$result, $$props, $$bindings, $$slots)
 
 const css$3 = {
 	code: "#guard.svelte-lnewky{padding:0;padding-bottom:60px;text-align:center}",
-	map: "{\"version\":3,\"file\":\"index.svelte\",\"sources\":[\"index.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport Navbar from '../components/Navbar.svelte';\\n\\timport Tabbar from '../components/Tabbar.svelte';\\n\\timport SteamGuard from '../components/SteamGuard.svelte';\\n</script>\\n\\n<svelte:head>\\n\\t<title>Guard :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Steam Guard\\\" />\\n<div id=\\\"guard\\\">\\n\\t<SteamGuard />\\n\\t<div style=\\\"height: 2000px\\\"></div>\\n</div>\\n<Tabbar location={3} />\\n\\n<style>\\n\\t#guard {\\n\\t\\tpadding: 0;\\n\\t\\tpadding-bottom: 60px;\\n\\t\\ttext-align: center;\\n\\t}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAkBC,MAAM,cAAC,CAAC,AACP,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACpB,UAAU,CAAE,MAAM,AACnB,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"index.svelte\",\"sources\":[\"index.svelte\"],\"sourcesContent\":[\"<script>\\n\\timport Navbar from '../components/Navbar.svelte';\\n\\timport Tabbar from '../components/Tabbar.svelte';\\n\\timport SteamGuard from '../components/SteamGuard.svelte';\\n</script>\\n\\n<svelte:head>\\n\\t<title>Guard :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Steam Guard\\\" />\\n<div id=\\\"guard\\\">\\n\\t<SteamGuard />\\n</div>\\n<Tabbar location={3} />\\n\\n<style>\\n\\t#guard {\\n\\t\\tpadding: 0;\\n\\t\\tpadding-bottom: 60px;\\n\\t\\ttext-align: center;\\n\\t}\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAiBC,MAAM,cAAC,CAAC,AACP,OAAO,CAAE,CAAC,CACV,cAAc,CAAE,IAAI,CACpB,UAAU,CAAE,MAAM,AACnB,CAAC\"}"
 };
 
 const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
@@ -266,8 +266,7 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => 
 	return `${($$result.head += `${($$result.title = `<title>Guard :: Steam Mobile</title>`, "")}`, "")}
 
 ${validate_component(Navbar, "Navbar").$$render($$result, { title: "Steam Guard" }, {}, {})}
-<div id="${"guard"}" class="${"svelte-lnewky"}">${validate_component(SteamGuard, "SteamGuard").$$render($$result, {}, {}, {})}
-	<div style="${"height: 2000px"}"></div></div>
+<div id="${"guard"}" class="${"svelte-lnewky"}">${validate_component(SteamGuard, "SteamGuard").$$render($$result, {}, {}, {})}</div>
 ${validate_component(Tabbar, "Tabbar").$$render($$result, { location: 3 }, {}, {})}`;
 });
 

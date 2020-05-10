@@ -11,7 +11,6 @@
 <Navbar title="Steam Guard" />
 <div id="guard">
 	<SteamGuard />
-	<div style="height: 2000px"></div>
 </div>
 <Tabbar location={3} />
 
