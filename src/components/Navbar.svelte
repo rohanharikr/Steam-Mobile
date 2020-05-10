@@ -3,7 +3,7 @@
   export let title
 </script>
 
-<Headroom duration="350ms" offset={50} tolerance={0}>
+<Headroom duration="250ms" offset={50} tolerance={0}>
   <div id="navbar">
     <div>
       <img src="search.svg" />

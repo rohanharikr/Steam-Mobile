@@ -1,9 +1,9 @@
 <script>
-  import { onDestroy } from 'svelte'
+  // import { onDestroy } from 'svelte'
   import { username } from '../routes/stores.js'
 
-  let code = 72826
   let percentage = 0
+  let code
 
   function onInterval(callback, time) {
     const interval = setInterval(callback, time)
@@ -35,17 +35,18 @@
 
 <div id="wrapper">
   <div
-    id="timerbar"
-    style="width: {100 - percentage * 10}%; background-image: {percentage >= 7 ? 'linear-gradient(145deg, rgba(173,40,33,1) 0%, rgba(173,40,33,1) 100%)' : 'linear-gradient(145deg, rgba(0,0,255,1) 0%, rgba(163,68,201,1) 100%)'};" />
+    class="timerbar"
+    style="width: {100 - percentage * 10}%; background-image: {percentage >= 7 ? 'linear-gradient(145deg, rgba(173,40,33,1) 0%, rgba(173,40,33,1) 100%)' : 'linear-gradient(145deg, rgba(0,0,255,1) 0%, rgba(163,68,201,1) 100%)'};
+    z-index: 9999" />
+  <div class="timerbar trail" />
   <div id="code" style="color: {percentage >= 7 ? '#AD2821' : 'white'}">
-    {code}
+    {code || codegen()}
   </div>
   <div id="username">{username_value}</div>
 </div>
 
 <style>
   #wrapper {
-    background-color: #161c2d;
     width: 100%;
     height: 145px;
     padding-top: 90px;
@@ -65,7 +66,7 @@
     opacity: 0.8;
   }
 
-  #timerbar {
+  .timerbar {
     right: 0;
     left: 0;
     margin-right: auto;
@@ -74,5 +75,11 @@
     top: 90px;
     transform: scale(0.8);
     transition: 0.5s;
+  }
+
+  .trail {
+    background-color: #1c1c1c;
+    position: absolute;
+    z-index: -999;
   }
 </style>
