@@ -73,7 +73,7 @@ status codes -->
   #tabs {
     display: flex;
     padding: 0px 30px;
-    width: 150px;
+    width: 145px;
     justify-content: space-between;
     align-items: center;
   }
@@ -81,8 +81,9 @@ status codes -->
   h3 {
     color: #9099a1;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
+    opacity: 0.8;
   }
 
   ul {
@@ -98,7 +99,8 @@ status codes -->
   }
 
   .selectedtab {
-    color: #a7d6f0;
+    color: #027aff;
+    font-weight: 600;
   }
 
   #tabscontainer {

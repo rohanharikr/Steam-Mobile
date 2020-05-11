@@ -10,7 +10,7 @@
 </script>
 
 <div id="card">
-  <div id="image" style="background-image: url({image});">
+  <div id="image" class="image" style="background-image: url({image});">
     <PriceBox {originalPrice} {reducedPrice} small={true} />
   </div>
   <div id="cardInfo">
@@ -35,16 +35,10 @@
     flex-direction: column;
   }
 
-  #image {
+  .image {
     width: 145px;
     height: 145px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
     scroll-snap-align: center;
-    margin-left: 10px;
-    position: relative;
   }
 
   /*	#owners {

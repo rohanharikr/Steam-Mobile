@@ -5,12 +5,10 @@
 
 <Headroom offset={50} tolerance={5}>
   <div id="navbar">
-    <div>
+    <img src="steambrand.svg" height="28px" style="opacity: 0.6" />
+    <div id="navbar--right">
+      <div style="opacity: 0.6">{title}</div>
       <img src="search.svg" />
-    </div>
-    <div>{title}</div>
-    <div>
-      <img src="filter.svg" height="12px;" />
     </div>
   </div>
 </Headroom>
@@ -22,9 +20,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
-    color: #9099a1;
+    padding: 0px 20px;
+    color: #027aff;
     font-weight: 500;
     font-size: 16px;
+  }
+
+  #navbar--right {
+    display: flex;
+  }
+
+  #navbar--right div {
+    padding-right: 30px;
+  }
+
+  #navbar--right div::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 24px;
+    background-color: #9099a1;
+    opacity: 0.2;
+    top: 18px;
+    margin-left: 15px;
   }
 </style>

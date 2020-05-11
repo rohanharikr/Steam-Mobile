@@ -3,7 +3,7 @@
 </script>
 
 <div id="card">
-  <div id="image" style="background-image:url({image});">
+  <div id="image" class="image" style="background-image:url({image});">
     <div id="imageController">{genre}</div>
   </div>
   <div id="cardInfo" />
@@ -26,14 +26,9 @@
     align-items: center;
   }
 
-  #image {
+  .image {
     width: 145px;
     height: 60px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
     scroll-snap-align: center;
-    margin-left: 10px;
   }
 </style>

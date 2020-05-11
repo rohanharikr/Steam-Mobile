@@ -20,11 +20,12 @@ status codes -->
 
 <style>
   h3 {
-    color: #a7d6f0;
+    color: #027aff;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     padding: 0px 30px;
+    opacity: 0.8;
   }
 
   #list {

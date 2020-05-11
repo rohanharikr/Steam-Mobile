@@ -8,7 +8,7 @@
   <title>Store :: Steam Mobile</title>
 </svelte:head>
 
-<Navbar title="Steam Store" />
+<Navbar title="Store" />
 <div id="store">
   <StoreSection
     tag="Special Offers"

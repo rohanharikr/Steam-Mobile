@@ -69,7 +69,7 @@ function create_fragment(ctx) {
         'class',
         (div0_class_value =
           '' +
-          (/*status*/ (ctx[1] === 1 ? 'name--ingame' : '') +
+          /*status*/ ((ctx[1] === 1 ? 'name--ingame' : '') +
             /*status*/ (ctx[1] === 2 ? 'name--online' : '') +
             /*status*/ (ctx[1] === 3 ? 'status offline' : '') +
             ' svelte-gwm1hn'))
@@ -81,7 +81,7 @@ function create_fragment(ctx) {
         'class',
         (div1_class_value =
           '' +
-          (/*status*/ (ctx[1] === 1 ? 'status ingame' : '') +
+          /*status*/ ((ctx[1] === 1 ? 'status ingame' : '') +
             /*status*/ (ctx[1] === 2 ? 'status online' : '') +
             /*status*/ (ctx[1] === 3 ? 'status offline' : '') +
             ' svelte-gwm1hn'))
@@ -102,7 +102,7 @@ function create_fragment(ctx) {
         div0_class_value !==
           (div0_class_value =
             '' +
-            (/*status*/ (ctx[1] === 1 ? 'name--ingame' : '') +
+            /*status*/ ((ctx[1] === 1 ? 'name--ingame' : '') +
               /*status*/ (ctx[1] === 2 ? 'name--online' : '') +
               /*status*/ (ctx[1] === 3 ? 'status offline' : '') +
               ' svelte-gwm1hn'))
@@ -115,7 +115,7 @@ function create_fragment(ctx) {
         div1_class_value !==
           (div1_class_value =
             '' +
-            (/*status*/ (ctx[1] === 1 ? 'status ingame' : '') +
+            /*status*/ ((ctx[1] === 1 ? 'status ingame' : '') +
               /*status*/ (ctx[1] === 2 ? 'status online' : '') +
               /*status*/ (ctx[1] === 3 ? 'status offline' : '') +
               ' svelte-gwm1hn'))
@@ -668,7 +668,7 @@ function create_fragment$2(ctx) {
         'class',
         (li_class_value =
           '' +
-          (/*status*/ (ctx[3] === 1 ? 'status ingame' : '') +
+          /*status*/ ((ctx[3] === 1 ? 'status ingame' : '') +
             /*status*/ (ctx[3] === 2 ? 'status online' : '') +
             /*status*/ (ctx[3] === 3 ? 'status offline statusoffline' : '') +
             ' svelte-zt7sbu'))
@@ -724,7 +724,7 @@ function create_fragment$2(ctx) {
         li_class_value !==
           (li_class_value =
             '' +
-            (/*status*/ (ctx[3] === 1 ? 'status ingame' : '') +
+            /*status*/ ((ctx[3] === 1 ? 'status ingame' : '') +
               /*status*/ (ctx[3] === 2 ? 'status online' : '') +
               /*status*/ (ctx[3] === 3 ? 'status offline statusoffline' : '') +
               ' svelte-zt7sbu'))

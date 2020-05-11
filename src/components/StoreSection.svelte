@@ -110,7 +110,6 @@
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
     margin-left: -10px;
     display: flex;
     scrollbar-width: none;

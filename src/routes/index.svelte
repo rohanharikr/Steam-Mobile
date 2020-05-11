@@ -9,7 +9,7 @@
   <title>Guard :: Steam Mobile</title>
 </svelte:head>
 
-<Navbar title="Steam Guard" />
+<Navbar title="Guard" />
 <div id="guard">
   <SteamGuard />
   <SteamMusic />
