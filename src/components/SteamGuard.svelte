@@ -81,5 +81,6 @@
     background-color: #1c1c1c;
     position: absolute;
     z-index: -999;
+    opacity: 0.6;
   }
 </style>
