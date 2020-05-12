@@ -18,7 +18,7 @@
 
 <style>
   #guard {
-    padding: 0;
+    padding: 0px 30px;
     padding-bottom: 60px;
     text-align: center;
   }

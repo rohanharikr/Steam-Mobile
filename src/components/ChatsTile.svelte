@@ -1,5 +1,10 @@
 <script>
-  export let userName, gameName, userImage, status, timestamp, offline
+  export let userName,
+    gameName = '',
+    userImage,
+    status,
+    timestamp = '',
+    offline
 </script>
 
 <!-- status codes

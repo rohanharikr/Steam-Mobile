@@ -1,13 +1,12 @@
 <script>
   import ChatsTile from './ChatsTile.svelte'
-
   let offline = false,
     onlineusers = 3,
     offlineusers = 2
 </script>
 
 <!-- status codes
-	1 = ingame, 2 online, 3 offline
+  1 = ingame, 2 online, 3 offline
 status codes -->
 
 <div id="card">
@@ -77,7 +76,6 @@ status codes -->
     justify-content: space-between;
     align-items: center;
   }
-
   h3 {
     color: #9099a1;
     text-transform: uppercase;
@@ -85,7 +83,6 @@ status codes -->
     font-size: 12px;
     opacity: 0.8;
   }
-
   ul {
     list-style: none;
     padding: 0px 30px;
@@ -93,16 +90,13 @@ status codes -->
     position: relative;
     margin: 0;
   }
-
   #card {
     margin-top: 30px;
   }
-
   .selectedtab {
     color: #027aff;
     font-weight: 600;
   }
-
   #tabscontainer {
     position: sticky;
     padding-top: 30px;

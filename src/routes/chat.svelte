@@ -1,8 +1,8 @@
 <script>
   import Navbar from '../components/Navbar.svelte'
   import Tabbar from '../components/Tabbar.svelte'
-  import RecentChats from '../components/RecentChats.svelte'
   import Chats from '../components/Chats.svelte'
+  import RecentChats from '../components/RecentChats.svelte'
 </script>
 
 <svelte:head>

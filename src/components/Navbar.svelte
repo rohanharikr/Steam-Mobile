@@ -5,7 +5,7 @@
 
 <Headroom offset={50} tolerance={5}>
   <div id="navbar">
-    <img src="steambrand.svg" height="28px" style="opacity: 0.6" />
+    <img src="steambrand.svg" height="28px" style="opacity: 1" />
     <div id="navbar--right">
       <div style="opacity: 0.6">{title}</div>
       <img src="search.svg" />
