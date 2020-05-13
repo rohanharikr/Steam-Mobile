@@ -2,9 +2,9 @@
   import Navbar from '../components/Navbar.svelte'
   import Tabbar from '../components/Tabbar.svelte'
   import ProfileHeader from '../components/ProfileHeader.svelte'
-  import NavTray from '../components/NavTray.svelte'
   import About from '../components/About.svelte'
   import { username } from './stores.js'
+  import { Router, Link, Route } from 'svelte-routing'
 
   let username_value
 
@@ -24,13 +24,46 @@
     alias="bingotheslayer"
     profilepicture="profilepicture.jpg"
     level="40" />
-  <NavTray />
-  <About />
+  <div id="navtray">
+    <div class="selected">About</div>
+    <div>Activity</div>
+    <div>Inventory</div>
+  </div>
+  <div id="container">
+    <About />
+  </div>
 </div>
 <Tabbar location={2} />
 
 <style>
+  #container {
+    padding: 20px 30px;
+  }
+
   #profile {
     padding: 60px 0px;
+  }
+
+  #navtray {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #navtray div {
+    background-color: #0f0b20;
+    width: 22%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+  }
+
+  .selected {
+    border: 1px solid #027aff;
   }
 </style>

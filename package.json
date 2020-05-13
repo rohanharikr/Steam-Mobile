@@ -16,7 +16,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{js,jsx,svelte}\""
+    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{jsx,svelte}\""
   },
   "dependencies": {
     "compression": "^1.7.1",

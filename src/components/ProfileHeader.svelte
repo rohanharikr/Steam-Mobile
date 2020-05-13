@@ -71,10 +71,10 @@
   #layer1 {
     position: absolute;
     height: 50px;
-    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     bottom: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 975;
   }
 
   #contentwrapper {
