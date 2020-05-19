@@ -1,5 +1,5 @@
 <script>
-  export let alias, name, profilepicture, level
+  export let alias, name, profilePicture, level
 </script>
 
 <main>
@@ -9,7 +9,7 @@
       <div id="content">
         <div
           id="profilepicture"
-          style="background-image: url({profilepicture});" />
+          style="background-image: url({profilePicture});" />
         <div id="userinfo">
           <h3>{alias}</h3>
           <h5>{name}</h5>
@@ -97,6 +97,12 @@
     z-index: 3;
     position: relative;
     opacity: 0.1;
+  }
+
+  @media only screen and (min-width: 600px) {
+    #layer2 {
+      background-position: 0px -100px;
+    }
   }
 
   #layer3 {

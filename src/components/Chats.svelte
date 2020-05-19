@@ -1,5 +1,6 @@
 <script>
   import ChatsTile from './ChatsTile.svelte'
+
   let offline = false,
     onlineusers = 3,
     offlineusers = 2
@@ -8,7 +9,6 @@
 <!-- status codes
   1 = ingame, 2 online, 3 offline
 status codes -->
-
 <div id="card">
   <div id="tabscontainer">
     <div id="tabs">

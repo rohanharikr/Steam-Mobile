@@ -4,7 +4,6 @@
   import ProfileHeader from '../components/ProfileHeader.svelte'
   import About from '../components/About.svelte'
   import { username } from './stores.js'
-  import { Router, Link, Route } from 'svelte-routing'
 
   let username_value
 
@@ -22,7 +21,7 @@
   <ProfileHeader
     name={username_value}
     alias="bingotheslayer"
-    profilepicture="profilepicture.jpg"
+    profilePicture="profilepicture.jpg"
     level="40" />
   <div id="navtray">
     <div class="selected">About</div>
