@@ -16,6 +16,10 @@
   <div id="spotlight">
     {#if rectangleCard}
       <RectangleCard
+        image="https://www.psu.com/wp/wp-content/uploads/2019/07/Cyberpunk-2077.jpg"
+        originalPrice="69.99"
+        reducedPrice="59.99" />
+      <RectangleCard
         image="https://cdn.arstechnica.net/wp-content/uploads/2019/10/outer-worlds-listing.png"
         originalPrice="69.99"
         reducedPrice="59.99" />

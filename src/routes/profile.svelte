@@ -36,7 +36,7 @@
 
 <style>
   #container {
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 
   #profile {
@@ -44,7 +44,7 @@
   }
 
   #navtray {
-    padding: 0px 30px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;

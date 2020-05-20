@@ -19,7 +19,7 @@
       images={[{ link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/54/5428a931843bec66cdcd8a58b20060cc4c581cad_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/8f/8fee180ace401f3bd50d5b96f7d19ab8da65553b_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b4/b4f03f03f8997cb0de81b6d1c35a5dc3633be69a_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/23/232bf1a8e7db9e853cc508295b9908bf61cda90b_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/53/53edb1365f53a23314beb6c943ddf38104fc50cf_full.jpg', borderRadius: '2px' }]} />
   {:else if name === 'Groups'}
     <Showcase
-      images={[{ link: 'https://steamcommunity-a.akamaihd.net/public/images/badges/37_summer2019/level25_80.png' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/730/54e40b9e2288fbab8bd4c6537b0325d405c7e1b0.png' }, { link: 'https://steamcommunity-a.akamaihd.net/public/images/badges/28_springcleaning2018/bronze_80.png' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/762800/d467ec8eaed4643c47fbed43ed781daef2525963.png' }, { link: 'https://steamcommunity-a.akamaihd.net/public/images/badges/27_steamawardnominations/level04_80.png' }]} />
+      images={[{ link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e3/e34e65ef2ef16093d4428c930fbcc42490522ed3_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/6f/6f286e56e44d76779da78587f4825dd2a056f21c_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9b/9b62d03b03693bbffa90947d8435f5238ea86cac_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/9b/9b1f97e41e69a4b62ef6ca882e4a987e48674b83_full.jpg', borderRadius: '2px' }, { link: 'https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/14/1415fb0c2184840713d26e08ef1446e67cff60c1_full.jpg', borderRadius: '2px' }]} />
   {/if}
 </div>
 
@@ -68,20 +68,21 @@
   @media only screen and (max-width: 600px) {
     #badges {
       grid-column: 1/3;
+      grid-row: 3;
     }
   }
 
   @media only screen and (max-width: 600px) {
     #friends {
       grid-column: 1/3;
-      grid-row: 4;
+      grid-row: 2;
     }
   }
 
   @media only screen and (max-width: 600px) {
     #groups {
       grid-column: 1/3;
-      grid-row: 5;
+      grid-row: 4;
     }
   }
 </style>

@@ -1,18 +1,18 @@
 <script>
   import AboutMeTile from './AboutMeTile.svelte'
   import ProfileTile from './ProfileTile.svelte'
-  // import Artwork from './Badges.svelte'
+  import Artwork from './Artwork.svelte'
   // import Comments from './Badges.svelte'
 </script>
 
 <main>
   <AboutMeTile />
-  <ProfileTile id="badges" name="Badges" number="14" />
   <ProfileTile id="friends" name="Friends" number="28" />
+  <ProfileTile id="badges" name="Badges" number="14" />
   <ProfileTile id="groups" name="Groups" number="8" />
-  <!-- <Artwork /> -->
   <!-- <Comments /> -->
 </main>
+<Artwork />
 
 <style>
   main {
