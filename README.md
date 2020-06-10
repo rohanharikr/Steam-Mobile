@@ -7,3 +7,6 @@ npm i
 npm run dev  
 ```
 Open localhost:3000
+
+npm run export sapper
+npm run format

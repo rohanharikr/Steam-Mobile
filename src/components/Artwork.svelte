@@ -1,3 +1,7 @@
+<script>
+  import LikeButton from './LikeButton.svelte'
+</script>
+
 <main>
   <div id="title">
     <h3>Artwork</h3>
@@ -8,10 +12,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);" />
+      <div class="artwork--info">
+        <div class="title">"Ashen one"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -19,10 +24,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);" />
+      <div class="artwork--info">
+        <div class="title">"Too many shadows"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -30,10 +36,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);" />
+      <div class="artwork--info">
+        <div class="title">"You DIED"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -41,10 +48,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);" />
+      <div class="artwork--info">
+        <div class="title">"Shadows die many times"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -52,10 +60,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);" />
+      <div class="artwork--info">
+        <div class="title">"Estus Flask"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -63,10 +72,11 @@
       <div
         class="artwork--item"
         style="background-image:
-        url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);">
-        <div class="artwork--info">
-          <div class="title" />
-          <div class="actions" />
+        url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);" />
+      <div class="artwork--info">
+        <div class="title">"One short journey"</div>
+        <div class="actions">
+          <LikeButton />
         </div>
       </div>
     </div>
@@ -119,7 +129,7 @@
   .artwork--item {
     height: 200px;
     width: 250px;
-    background-color: yellow;
+    background-color: #161c2d;
     display: inline-block;
     margin-right: 10px;
     scroll-snap-stop: always;
@@ -132,5 +142,19 @@
 
   #artwork::-webkit-scrollbar {
     display: none;
+  }
+
+  .artwork--info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .artwork--info .actions {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
   }
 </style>
