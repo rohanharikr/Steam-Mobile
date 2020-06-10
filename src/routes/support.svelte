@@ -1,7 +1,18 @@
 <script>
+  import { onMount } from 'svelte'
   import Navbar from '../components/Navbar.svelte'
   import Tabbar from '../components/Tabbar.svelte'
   import SupportCard from '../components/SupportCard.svelte'
+
+  let version
+
+  onMount(async () => {
+    await fetch('https://api.github.com/repos/rohanharikr/Steam-Mobile/commits')
+      .then((response) => response.json())
+      .then((data) => {
+        version = data[0].sha.slice(0, 7)
+      })
+  })
 </script>
 
 <svelte:head>
@@ -13,7 +24,11 @@
   <SupportCard title="Recent Products" />
   <SupportCard single="true" name="Configure app" />
   <SupportCard combined="true" name="Configure app" />
-  <h5>rohanharikr/commit vesion</h5>
+  <h5>
+    rohanharikr /
+    <i>commit</i>
+    {version}
+  </h5>
 </div>
 <Tabbar location={5} />
 

@@ -40,6 +40,9 @@ function get_current_component() {
         throw new Error(`Function called outside component initialization`);
     return current_component;
 }
+function onMount(fn) {
+    get_current_component().$$.on_mount.push(fn);
+}
 function setContext(key, context) {
     get_current_component().$$.context.set(key, context);
 }
@@ -493,26 +496,26 @@ const ProfileTile = create_ssr_component(($$result, $$props, $$bindings, $$slots
 
 const css$9 = {
 	code: "main.svelte-ogbm87{background-color:#0f0b20;padding:10px 15px;padding-right:0px;border-radius:2px;font-size:12px;line-height:18px;font-weight:300;grid-column:1/3;margin-top:15px}.artwork_container.svelte-ogbm87{display:flex;flex-direction:column}#title.svelte-ogbm87{justify-content:space-between;display:flex;padding-right:15px}h2.svelte-ogbm87{font-weight:500;color:#027aff}h3.svelte-ogbm87{color:#9099a1}#artwork.svelte-ogbm87{overflow-x:auto;overflow-y:hidden;white-space:nowrap;scroll-snap-type:x mandatory;margin-top:10px;display:flex;scrollbar-width:none}.artwork--item.svelte-ogbm87{height:200px;width:250px;background-color:yellow;display:inline-block;margin-right:10px;scroll-snap-stop:always;scroll-snap-align:center;background-position:center;background-repeat:no-repeat;background-size:cover;border-radius:2px}#artwork.svelte-ogbm87::-webkit-scrollbar{display:none}",
-	map: "{\"version\":3,\"file\":\"Artwork.svelte\",\"sources\":[\"Artwork.svelte\"],\"sourcesContent\":[\"<main>\\n   <div id=\\\"title\\\">\\n      <h3>Artwork</h3>\\n      <h2>6</h2>\\n   </div>\\n   <div id=\\\"artwork\\\">\\n     <div class=\\\"artwork_container\\\">\\n       <div\\n          class=\\\"artwork--item\\\"\\n          style=\\\"background-image:\\n          url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);\\\" >\\n          <div class=\\\"artwork--info\\\">\\n             <div class=\\\"title\\\"></div>\\n             <div class=\\\"actions\\\"></div>\\n          </div>\\n       </div>\\n     </div>\\n     <div class=\\\"artwork_container\\\">\\n        <div class=\\\"artwork--item\\\" style=\\\"background-image: url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);\\\" >\\n           <div class=\\\"artwork--info\\\">\\n              <div class=\\\"title\\\"></div>\\n              <div class=\\\"actions\\\"></div>\\n           </div>\\n        </div>\\n      </div>\\n      <div class=\\\"artwork_container\\\">\\n          <div\\n              class=\\\"artwork--item\\\"\\n              style=\\\"background-image:\\n              url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);\\\" >\\n              <div class=\\\"artwork--info\\\">\\n                 <div class=\\\"title\\\"></div>\\n                 <div class=\\\"actions\\\"></div>\\n              </div>\\n           </div>\\n        </div>\\n        <div class=\\\"artwork_container\\\">\\n           <div\\n              class=\\\"artwork--item\\\"\\n              style=\\\"background-image:\\n              url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);\\\" >\\n              <div class=\\\"artwork--info\\\">\\n                 <div class=\\\"title\\\"></div>\\n                 <div class=\\\"actions\\\"></div>\\n              </div>\\n           </div>\\n        </div>\\n        <div class=\\\"artwork_container\\\">\\n           <div\\n              class=\\\"artwork--item\\\"\\n              style=\\\"background-image:\\n              url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);\\\" >\\n              <div class=\\\"artwork--info\\\">\\n                 <div class=\\\"title\\\"></div>\\n                 <div class=\\\"actions\\\"></div>\\n              </div>\\n           </div>\\n        </div>\\n        <div class=\\\"artwork_container\\\">\\n           <div\\n              class=\\\"artwork--item\\\"\\n              style=\\\"background-image:\\n              url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);\\\" >\\n              <div class=\\\"artwork--info\\\">\\n                 <div class=\\\"title\\\"></div>\\n                 <div class=\\\"actions\\\"></div>\\n              </div>\\n           </div>\\n        </div>\\n   </div>\\n</main>\\n\\n\\n\\n<style>\\n  main {\\n    background-color: #0f0b20;\\n    padding: 10px 15px;\\n    padding-right: 0px;\\n    border-radius: 2px;\\n    font-size: 12px;\\n    line-height: 18px;\\n    font-weight: 300;\\n    grid-column: 1/3;\\n    margin-top: 15px;\\n  }\\n\\n  .artwork_container {\\n    display: flex;\\n    flex-direction: column;\\n  }\\n\\n  #title {\\n    justify-content: space-between;\\n    display: flex;\\n    padding-right: 15px;\\n  }\\n\\n  h2 {\\n    font-weight: 500;\\n    color: #027aff;\\n  }\\n\\n  h3 {\\n    color: #9099a1;\\n  }\\n\\n  #artwork {\\n    overflow-x: auto;\\n    overflow-y: hidden;\\n    white-space: nowrap;\\n    scroll-snap-type: x mandatory;\\n    margin-top: 10px;\\n    display: flex;\\n    scrollbar-width: none;\\n  }\\n\\n  .artwork--item {\\n    height: 200px;\\n    width: 250px;\\n    background-color: yellow;\\n    display: inline-block;\\n    margin-right: 10px;\\n    scroll-snap-stop: always;\\n    scroll-snap-align: center;\\n    background-position: center;\\n    background-repeat: no-repeat;\\n    background-size: cover;\\n    border-radius: 2px;\\n  }\\n\\n  #artwork::-webkit-scrollbar {\\n    display: none;\\n  }\\n</style>\\n\"],\"names\":[],\"mappings\":\"AA2EE,IAAI,cAAC,CAAC,AACJ,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,aAAa,CAAE,GAAG,CAClB,aAAa,CAAE,GAAG,CAClB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,GAAG,CAChB,WAAW,CAAE,CAAC,CAAC,CAAC,CAChB,UAAU,CAAE,IAAI,AAClB,CAAC,AAED,kBAAkB,cAAC,CAAC,AAClB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,AACxB,CAAC,AAED,MAAM,cAAC,CAAC,AACN,eAAe,CAAE,aAAa,CAC9B,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,AACrB,CAAC,AAED,EAAE,cAAC,CAAC,AACF,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,OAAO,AAChB,CAAC,AAED,EAAE,cAAC,CAAC,AACF,KAAK,CAAE,OAAO,AAChB,CAAC,AAED,QAAQ,cAAC,CAAC,AACR,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,gBAAgB,CAAE,CAAC,CAAC,SAAS,CAC7B,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,IAAI,AACvB,CAAC,AAED,cAAc,cAAC,CAAC,AACd,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,KAAK,CACZ,gBAAgB,CAAE,MAAM,CACxB,OAAO,CAAE,YAAY,CACrB,YAAY,CAAE,IAAI,CAClB,gBAAgB,CAAE,MAAM,CACxB,iBAAiB,CAAE,MAAM,CACzB,mBAAmB,CAAE,MAAM,CAC3B,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,aAAa,CAAE,GAAG,AACpB,CAAC,AAED,sBAAQ,mBAAmB,AAAC,CAAC,AAC3B,OAAO,CAAE,IAAI,AACf,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"Artwork.svelte\",\"sources\":[\"Artwork.svelte\"],\"sourcesContent\":[\"<main>\\n  <div id=\\\"title\\\">\\n    <h3>Artwork</h3>\\n    <h2>6</h2>\\n  </div>\\n  <div id=\\\"artwork\\\">\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n    <div class=\\\"artwork_container\\\">\\n      <div\\n        class=\\\"artwork--item\\\"\\n        style=\\\"background-image:\\n        url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);\\\">\\n        <div class=\\\"artwork--info\\\">\\n          <div class=\\\"title\\\" />\\n          <div class=\\\"actions\\\" />\\n        </div>\\n      </div>\\n    </div>\\n  </div>\\n</main>\\n\\n<style>\\n  main {\\n    background-color: #0f0b20;\\n    padding: 10px 15px;\\n    padding-right: 0px;\\n    border-radius: 2px;\\n    font-size: 12px;\\n    line-height: 18px;\\n    font-weight: 300;\\n    grid-column: 1/3;\\n    margin-top: 15px;\\n  }\\n\\n  .artwork_container {\\n    display: flex;\\n    flex-direction: column;\\n  }\\n\\n  #title {\\n    justify-content: space-between;\\n    display: flex;\\n    padding-right: 15px;\\n  }\\n\\n  h2 {\\n    font-weight: 500;\\n    color: #027aff;\\n  }\\n\\n  h3 {\\n    color: #9099a1;\\n  }\\n\\n  #artwork {\\n    overflow-x: auto;\\n    overflow-y: hidden;\\n    white-space: nowrap;\\n    scroll-snap-type: x mandatory;\\n    margin-top: 10px;\\n    display: flex;\\n    scrollbar-width: none;\\n  }\\n\\n  .artwork--item {\\n    height: 200px;\\n    width: 250px;\\n    background-color: yellow;\\n    display: inline-block;\\n    margin-right: 10px;\\n    scroll-snap-stop: always;\\n    scroll-snap-align: center;\\n    background-position: center;\\n    background-repeat: no-repeat;\\n    background-size: cover;\\n    border-radius: 2px;\\n  }\\n\\n  #artwork::-webkit-scrollbar {\\n    display: none;\\n  }\\n</style>\\n\"],\"names\":[],\"mappings\":\"AA4EE,IAAI,cAAC,CAAC,AACJ,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,aAAa,CAAE,GAAG,CAClB,aAAa,CAAE,GAAG,CAClB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,WAAW,CAAE,GAAG,CAChB,WAAW,CAAE,CAAC,CAAC,CAAC,CAChB,UAAU,CAAE,IAAI,AAClB,CAAC,AAED,kBAAkB,cAAC,CAAC,AAClB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,AACxB,CAAC,AAED,MAAM,cAAC,CAAC,AACN,eAAe,CAAE,aAAa,CAC9B,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,AACrB,CAAC,AAED,EAAE,cAAC,CAAC,AACF,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,OAAO,AAChB,CAAC,AAED,EAAE,cAAC,CAAC,AACF,KAAK,CAAE,OAAO,AAChB,CAAC,AAED,QAAQ,cAAC,CAAC,AACR,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,gBAAgB,CAAE,CAAC,CAAC,SAAS,CAC7B,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,IAAI,AACvB,CAAC,AAED,cAAc,cAAC,CAAC,AACd,MAAM,CAAE,KAAK,CACb,KAAK,CAAE,KAAK,CACZ,gBAAgB,CAAE,MAAM,CACxB,OAAO,CAAE,YAAY,CACrB,YAAY,CAAE,IAAI,CAClB,gBAAgB,CAAE,MAAM,CACxB,iBAAiB,CAAE,MAAM,CACzB,mBAAmB,CAAE,MAAM,CAC3B,iBAAiB,CAAE,SAAS,CAC5B,eAAe,CAAE,KAAK,CACtB,aAAa,CAAE,GAAG,AACpB,CAAC,AAED,sBAAQ,mBAAmB,AAAC,CAAC,AAC3B,OAAO,CAAE,IAAI,AACf,CAAC\"}"
 };
 
 const Artwork = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	$$result.css.add(css$9);
 
 	return `<main class="${"svelte-ogbm87"}"><div id="${"title"}" class="${"svelte-ogbm87"}"><h3 class="${"svelte-ogbm87"}">Artwork</h3>
-      <h2 class="${"svelte-ogbm87"}">6</h2></div>
-   <div id="${"artwork"}" class="${"svelte-ogbm87"}"><div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n          url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-             <div class="${"actions"}"></div></div></div></div>
-     <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image: url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-              <div class="${"actions"}"></div></div></div></div>
-      <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n              url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-                 <div class="${"actions"}"></div></div></div></div>
-        <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n              url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-                 <div class="${"actions"}"></div></div></div></div>
-        <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n              url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-                 <div class="${"actions"}"></div></div></div></div>
-        <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n              url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
-                 <div class="${"actions"}"></div></div></div></div></div>
+    <h2 class="${"svelte-ogbm87"}">6</h2></div>
+  <div id="${"artwork"}" class="${"svelte-ogbm87"}"><div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://cdnb.artstation.com/p/assets/images/images/013/913/993/large/rao-zhengang-0e1215a3-1791-4c60-aad9-633627659cf9.jpg?1541630208);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div>
+    <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://farm5.staticflickr.com/4610/39871466181_d6b592a9e1_b.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div>
+    <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://cdnb.artstation.com/p/assets/images/images/005/617/333/large/omer-tunc-bloodborn-jpgg.jpg?1492494545);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div>
+    <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://images.hdqwalls.com/download/sekiro-shadows-die-twice-digital-fan-art-6l-2560x1700.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div>
+    <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://pbs.twimg.com/media/D5QAdraWkAIQsCO.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div>
+    <div class="${"artwork_container svelte-ogbm87"}"><div class="${"artwork--item svelte-ogbm87"}" style="${"background-image:\n        url(https://cdn.staticneo.com/ca/journey_conceptart_EaFXQ.jpg);"}"><div class="${"artwork--info"}"><div class="${"title"}"></div>
+          <div class="${"actions"}"></div></div></div></div></div>
 </main>`;
 });
 
@@ -710,10 +713,18 @@ const SupportCard = create_ssr_component(($$result, $$props, $$bindings, $$slots
 
 const css$e = {
 	code: "#support.svelte-1pwsucv{padding:90px 0px;padding-right:0;padding-bottom:80px}h5.svelte-1pwsucv{padding:0 30px;color:#9099a1}",
-	map: "{\"version\":3,\"file\":\"support.svelte\",\"sources\":[\"support.svelte\"],\"sourcesContent\":[\"<script>\\n  import Navbar from '../components/Navbar.svelte'\\n  import Tabbar from '../components/Tabbar.svelte'\\n  import SupportCard from '../components/SupportCard.svelte'\\n</script>\\n\\n<svelte:head>\\n  <title>Support :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Support\\\" />\\n<div id=\\\"support\\\">\\n  <SupportCard title=\\\"Recent Products\\\" />\\n  <SupportCard single=\\\"true\\\" name=\\\"Configure app\\\" />\\n  <SupportCard combined=\\\"true\\\" name=\\\"Configure app\\\" />\\n  <h5>rohanharikr/commit vesion</h5>\\n</div>\\n<Tabbar location={5} />\\n\\n<style>\\n  #support {\\n    padding: 90px 0px;\\n    padding-right: 0;\\n    padding-bottom: 80px;\\n  }\\n\\n  h5 {\\n    padding: 0 30px;\\n    color: #9099a1;\\n  }\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAoBE,QAAQ,eAAC,CAAC,AACR,OAAO,CAAE,IAAI,CAAC,GAAG,CACjB,aAAa,CAAE,CAAC,CAChB,cAAc,CAAE,IAAI,AACtB,CAAC,AAED,EAAE,eAAC,CAAC,AACF,OAAO,CAAE,CAAC,CAAC,IAAI,CACf,KAAK,CAAE,OAAO,AAChB,CAAC\"}"
+	map: "{\"version\":3,\"file\":\"support.svelte\",\"sources\":[\"support.svelte\"],\"sourcesContent\":[\"<script>\\n  import { onMount } from \\\"svelte\\\";\\n  import Navbar from '../components/Navbar.svelte'\\n  import Tabbar from '../components/Tabbar.svelte'\\n  import SupportCard from '../components/SupportCard.svelte'\\n\\n  let version;\\n\\n  onMount(async() => {\\n    await fetch(\\\"https://api.github.com/repos/rohanharikr/Steam-Mobile/commits\\\")\\n    .then(response => response.json())\\n    .then(data => {\\n      version = data[0].sha.slice(0,7)\\n    });\\n  });\\n\\n</script>\\n\\n<svelte:head>\\n  <title>Support :: Steam Mobile</title>\\n</svelte:head>\\n\\n<Navbar title=\\\"Support\\\" />\\n<div id=\\\"support\\\">\\n  <SupportCard title=\\\"Recent Products\\\" />\\n  <SupportCard single=\\\"true\\\" name=\\\"Configure app\\\" />\\n  <SupportCard combined=\\\"true\\\" name=\\\"Configure app\\\" />\\n  <h5>rohanharikr / <i>commit</i> {version}</h5>\\n</div>\\n<Tabbar location={5} />\\n\\n<style>\\n  #support {\\n    padding: 90px 0px;\\n    padding-right: 0;\\n    padding-bottom: 80px;\\n  }\\n\\n  h5 {\\n    padding: 0 30px;\\n    color: #9099a1;\\n  }\\n</style>\\n\"],\"names\":[],\"mappings\":\"AAgCE,QAAQ,eAAC,CAAC,AACR,OAAO,CAAE,IAAI,CAAC,GAAG,CACjB,aAAa,CAAE,CAAC,CAChB,cAAc,CAAE,IAAI,AACtB,CAAC,AAED,EAAE,eAAC,CAAC,AACF,OAAO,CAAE,CAAC,CAAC,IAAI,CACf,KAAK,CAAE,OAAO,AAChB,CAAC\"}"
 };
 
 const Support = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
+	let version;
+
+	onMount(async () => {
+		await fetch("https://api.github.com/repos/rohanharikr/Steam-Mobile/commits").then(response => response.json()).then(data => {
+			version = data[0].sha.slice(0, 7);
+		});
+	});
+
 	$$result.css.add(css$e);
 
 	return `${($$result.head += `${($$result.title = `<title>Support :: Steam Mobile</title>`, "")}`, "")}
@@ -722,7 +733,7 @@ ${validate_component(Navbar, "Navbar").$$render($$result, { title: "Support" }, 
 <div id="${"support"}" class="${"svelte-1pwsucv"}">${validate_component(SupportCard, "SupportCard").$$render($$result, { title: "Recent Products" }, {}, {})}
   ${validate_component(SupportCard, "SupportCard").$$render($$result, { single: "true", name: "Configure app" }, {}, {})}
   ${validate_component(SupportCard, "SupportCard").$$render($$result, { combined: "true", name: "Configure app" }, {}, {})}
-  <h5 class="${"svelte-1pwsucv"}">rohanharikr/commit vesion</h5></div>
+  <h5 class="${"svelte-1pwsucv"}">rohanharikr / <i>commit</i> ${escape(version)}</h5></div>
 ${validate_component(Tabbar, "Tabbar").$$render($$result, { location: 5 }, {}, {})}`;
 });
 
@@ -3354,17 +3365,17 @@ const resolve_url = Url.resolve;
  * @param   Object   opts  Fetch options
  * @return  Promise
  */
-function fetch(url, opts) {
+function fetch$1(url, opts) {
 
 	// allow custom promise
-	if (!fetch.Promise) {
+	if (!fetch$1.Promise) {
 		throw new Error('native promise missing, set fetch.Promise to your favorite alternative');
 	}
 
-	Body.Promise = fetch.Promise;
+	Body.Promise = fetch$1.Promise;
 
 	// wrap http.request into fetch
-	return new fetch.Promise(function (resolve, reject) {
+	return new fetch$1.Promise(function (resolve, reject) {
 		// build request object
 		const request = new Request(url, opts);
 		const options = getNodeRequestOptions(request);
@@ -3428,7 +3439,7 @@ function fetch(url, opts) {
 			const headers = createHeadersLenient(res.headers);
 
 			// HTTP fetch step 5
-			if (fetch.isRedirect(res.statusCode)) {
+			if (fetch$1.isRedirect(res.statusCode)) {
 				// HTTP fetch step 5.2
 				const location = headers.get('Location');
 
@@ -3495,7 +3506,7 @@ function fetch(url, opts) {
 						}
 
 						// HTTP-redirect fetch step 15
-						resolve(fetch(new Request(locationURL, requestOpts)));
+						resolve(fetch$1(new Request(locationURL, requestOpts)));
 						finalize();
 						return;
 				}
@@ -3592,12 +3603,12 @@ function fetch(url, opts) {
  * @param   Number   code  Status code
  * @return  Boolean
  */
-fetch.isRedirect = function (code) {
+fetch$1.isRedirect = function (code) {
 	return code === 301 || code === 302 || code === 303 || code === 307 || code === 308;
 };
 
 // expose Promise
-fetch.Promise = global.Promise;
+fetch$1.Promise = global.Promise;
 
 function get_page_handler(
 	manifest,
@@ -3724,7 +3735,7 @@ function get_page_handler(
 					}
 				}
 
-				return fetch(parsed.href, opts);
+				return fetch$1(parsed.href, opts);
 			}
 		};
 
